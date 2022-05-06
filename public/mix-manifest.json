@@ -1,5 +1,7 @@
 {
     "/js/app.js": "/js/app.js",
+    "/js/perfect-scrollbar.min.js": "/js/perfect-scrollbar.min.js",
+    "/css/argon-dashboard.css": "/css/argon-dashboard.css",
     "/css/nucleo-svg.css": "/css/nucleo-svg.css",
     "/css/nucleoicons.css": "/css/nucleoicons.css",
     "/css/app.css": "/css/app.css"

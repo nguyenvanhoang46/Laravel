@@ -18,9 +18,5 @@ mix.js('resources/js/app.js', 'public/js')
     // .css('resources/css/test.css', 'public/css')
     .css('resources/css/nucleoicons.css', 'public/css')
     .css('resources/css/nucleo-svg.css', 'public/css')
-    .js('resources/js/bootstrap.bundle.min.js', 'public/js')
-    .js('resources/js/bootstrap.bundle.min.js', 'public/js')
-    .js('resources/js/bootstrap.bundle.min.js', 'public/js')
-    .js('resources/js/bootstrap.bundle.min.js', 'public/js')
-
-    ;
+    .css('resources/css/argon-dashboard.css', 'public/css')
+    .js('resources/js/plugins/perfect-scrollbar.min.js', 'public/js');
