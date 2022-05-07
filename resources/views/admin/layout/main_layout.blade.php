@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet"/>
     <link href="{{asset('')}}}" rel="stylesheet" />
     <link href="../assets/css/nucleo-icons.css" rel="stylesheet" />
-
+    <link rel="stylesheet" href="./fontawesome-free-6.1.1-web" />
     <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
     <link href="{{ asset('css/nucleoicons.css') }}" rel="stylesheet"/>
     <link rel="stylesheet" href="{{ asset('css/nucleo-svg.css')}}">
@@ -43,6 +43,6 @@
 
 {{-- Composer install --}}
 {{-- npm install --}}
-{{-- php artisan migrate:fresh --seed --}}{{-- // Data base--}}
 {{-- cp .env.example .env --}}
 {{-- php artisan key:generate --}}
+{{-- php artisan migrate:fresh --seed --}}{{-- // Data base--}}

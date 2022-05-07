@@ -26,3 +26,9 @@ Route::prefix('admin')->group(function () {
         Route::get('/', [ProductController::class, 'index']);
     });
 });
+
+Route::prefix('show')->group(function () {
+    Route::get('/', function () {
+       return view('admin.pages.show');
+    });
+});
