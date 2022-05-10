@@ -155,25 +155,29 @@
                                 <table class="table align-items-center mb-0">
                                         <thead>
                                         <tr class="">
-                                            <th>ID</th>
+                                            <th>Image</th>
                                             <th>Id_category</th>
                                             <th>Name</th>
                                             <th>Price</th>
                                             <th>Quantity</th>
-                                            <th>Image</th>
                                             <th>Actions</th>
                                         </tr>
                                         </thead>
                                         <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>đồng hồ</td>
-                                            <td>Galio</td>
-                                            <td>1000</td>
-                                            <td>10</td>
-                                            <td>hinh ảnh</td>
-                                            <td>Edit | Delete</td>
-                                        </tr>
+                                        @foreach($products as $product)
+                                            <tr>
+                                                <td>{{$product->id}}</td>
+                                                <td>{{$product->id_category}}</td>
+                                                <td>{{$product->name}}</td>
+                                                <td>{{$product->price}}</td>
+                                                <td>{{$product->quantity}}</td>
+                                                <td>{{$product->image}}</td>
+                                                <td>
+                                                    <button class="btn btn-warning">Edit</button>
+                                                    <button class="btn btn-danger ">Delete</button>
+                                                </td>
+                                            </tr>
+                                        @endforeach
                                         </tbody>
                                 </table>
                             </div>
