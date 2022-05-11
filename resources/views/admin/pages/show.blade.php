@@ -25,6 +25,7 @@
 <body class="g-sidenav-show   bg-gray-100">
     <div class="min-height-300 bg-primary position-absolute w-100"></div>
     @include('admin.partial.header')
+
     <main class="main-content position-relative border-radius-lg ">
         <!-- Navbar -->
         <nav class="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl " id="navbarBlur" data-scroll="false">
@@ -155,23 +156,24 @@
                                 <table class="table align-items-center mb-0">
                                         <thead>
                                         <tr class="">
+                                            <th>ID</th>
                                             <th>Image</th>
                                             <th>Id_category</th>
                                             <th>Name</th>
                                             <th>Price</th>
-                                            <th>Quantity</th>
                                             <th>Actions</th>
                                         </tr>
                                         </thead>
                                         <tbody>
                                         @foreach($products as $product)
                                             <tr>
-                                                <td>{{$product->id}}</td>
-                                                <td>{{$product->id_category}}</td>
-                                                <td>{{$product->name}}</td>
-                                                <td>{{$product->price}}</td>
-                                                <td>{{$product->quantity}}</td>
-                                                <td>{{$product->image}}</td>
+                                                <td>{{ $product->id }}</td>
+                                                <td>{{ $product->image }}</td>
+                                                <td>{{ $product->id_category }}</td>
+                                                <td>{{ $product->name }}</td>
+                                                <td>{{ $product->price }}</td>
+
+
                                                 <td>
                                                     <button class="btn btn-warning">Edit</button>
                                                     <button class="btn btn-danger ">Delete</button>

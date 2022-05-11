@@ -8,7 +8,7 @@ use phpDocumentor\Reflection\DocBlock\Description;
 
 class Category extends Model
 {
-    protected $table = 'category';
+    protected $table = 'categorys';
     protected $primaryKey = 'id';
     protected $fillable = ['name', 'description'];
 

@@ -8,9 +8,9 @@ use App\Models\Category;
 
 class Product extends Model
 {
-    protected $table = 'product';
+    protected $table = 'products';
     protected $primaryKey ='id';
-    protected $fillable = ['id_category', 'name', 'price', 'quantity', 'image'];
+    protected $fillable = ['image','id_category', 'name', 'price'];
 
     public function category () {
         return $this->belongsTo(Category::class);

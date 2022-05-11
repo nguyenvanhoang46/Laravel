@@ -24,11 +24,17 @@ Route::prefix('admin')->group(function () {
 
     Route::prefix('product')->group(function() {
         Route::get('/', [ProductController::class, 'index']);
+
+
+        Route::get('/show', function () {
+            $products = \App\Models\Product::all();
+            return view('admin.pages.show')->with('products', $products);
+        });
     });
 });
 
-Route::prefix('show')->group(function () {
-    Route::get('/', function () {
-       return view('admin.pages.show');
-    });
-});
+//Route::prefix('show')->group(function () {
+//
+//});
+//Route::get('/product', 'ControllerProduct')->name('Product');
+
