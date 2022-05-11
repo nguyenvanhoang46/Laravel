@@ -15,7 +15,7 @@ class ProductController extends Controller
     public function index()
     {
         $products = Product::all();
-        return view ('admin.pages.show')->with('products', $products);
+        return view ('admin.product.pages.show')->with('products', $products);
     }
 
     /**
@@ -25,7 +25,7 @@ class ProductController extends Controller
      */
     public function create()
     {
-        return view('admin.pages.create');
+        return view('admin.product.pages.create');
     }
 
     /**
@@ -36,7 +36,9 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $input = $request->all();
+        Product::create($input);
+        return redirect('product')->with('flash_message', 'Student Addedd!');
     }
 
     /**

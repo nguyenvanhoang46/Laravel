@@ -22,15 +22,15 @@ Route::prefix('admin')->group(function () {
         return view('admin.pages.dashboard');
     });
 
-    Route::prefix('product')->group(function() {
-        Route::get('/', [ProductController::class, 'index']);
+//    Route::prefix('product')->group(function() {
+//        Route::get('/', [ProductController::class, 'index']);
+//    });
 
+});
 
-        Route::get('/show', function () {
-            $products = \App\Models\Product::all();
-            return view('admin.pages.show')->with('products', $products);
-        });
-    });
+Route::resource("product", ProductController::class);
+Route::get('/create', function () {
+    return view('admin.product.pages.create');
 });
 
 //Route::prefix('show')->group(function () {

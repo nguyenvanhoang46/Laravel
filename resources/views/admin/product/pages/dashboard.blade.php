@@ -1,4 +1,4 @@
-@extends('admin.layout.main_layout')
+@extends('admin.product.layout.main_layout')
 
 @section('styles')
 
@@ -10,7 +10,8 @@
         <div class="container-fluid py-1 px-3">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 me-sm-6 me-5">
-                    <li class="breadcrumb-item text-sm"><a class="opacity-5 text-white" href="javascript:;">Pages</a></li>
+                    <li class="breadcrumb-item text-sm"><a class="opacity-5 text-white" href="javascript:;">Pages</a>
+                    </li>
                     <li class="breadcrumb-item text-sm text-white active" aria-current="page">Tables</li>
                 </ol>
                 <h6 class="font-weight-bolder text-white mb-0">Tables</h6>
@@ -44,11 +45,13 @@
                         </a>
                     </li>
                     <li class="nav-item dropdown pe-2 d-flex align-items-center">
-                        <a href="javascript:;" class="nav-link text-white p-0" id="dropdownMenuButton" data-bs-toggle="dropdown"
+                        <a href="javascript:;" class="nav-link text-white p-0" id="dropdownMenuButton"
+                           data-bs-toggle="dropdown"
                            aria-expanded="false">
                             <i class="fa fa-bell cursor-pointer"></i>
                         </a>
-                        <ul class="dropdown-menu  dropdown-menu-end  px-2 py-3 me-sm-n4" aria-labelledby="dropdownMenuButton">
+                        <ul class="dropdown-menu  dropdown-menu-end  px-2 py-3 me-sm-n4"
+                            aria-labelledby="dropdownMenuButton">
                             <li class="mb-2">
                                 <a class="dropdown-item border-radius-md" href="javascript:;">
                                     <div class="d-flex py-1">
@@ -91,10 +94,12 @@
                                     <div class="d-flex py-1">
                                         <div class="avatar avatar-sm bg-gradient-secondary  me-3  my-auto">
                                             <svg width="12px" height="12px" viewBox="0 0 43 36" version="1.1"
-                                                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                 xmlns="http://www.w3.org/2000/svg"
+                                                 xmlns:xlink="http://www.w3.org/1999/xlink">
                                                 <title>credit-card</title>
                                                 <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                                    <g transform="translate(-2169.000000, -745.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                                                    <g transform="translate(-2169.000000, -745.000000)" fill="#FFFFFF"
+                                                       fill-rule="nonzero">
                                                         <g transform="translate(1716.000000, 291.000000)">
                                                             <g transform="translate(453.000000, 454.000000)">
                                                                 <path class="color-background"
@@ -140,12 +145,18 @@
                             <table class="table align-items-center mb-0">
                                 <thead>
                                 <tr>
-                                    <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Author</th>
-                                    <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Function</th>
-                                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Status
+                                    <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+                                        Author
+                                    </th>
+                                    <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">
+                                        Function
                                     </th>
                                     <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                                        Employed</th>
+                                        Status
+                                    </th>
+                                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+                                        Employed
+                                    </th>
                                     <th class="text-secondary opacity-7"></th>
                                 </tr>
                                 </thead>
@@ -154,7 +165,8 @@
                                     <td>
                                         <div class="d-flex px-2 py-1">
                                             <div>
-                                                <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3" alt="user1">
+                                                <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3"
+                                                     alt="user1">
                                             </div>
                                             <div class="d-flex flex-column justify-content-center">
                                                 <h6 class="mb-0 text-sm">John Michael</h6>
@@ -173,7 +185,8 @@
                                         <span class="text-secondary text-xs font-weight-bold">23/04/18</span>
                                     </td>
                                     <td class="align-middle">
-                                        <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip"
+                                        <a href="javascript:;" class="text-secondary font-weight-bold text-xs"
+                                           data-toggle="tooltip"
                                            data-original-title="Edit user">
                                             Edit
                                         </a>
@@ -183,7 +196,8 @@
                                     <td>
                                         <div class="d-flex px-2 py-1">
                                             <div>
-                                                <img src="../assets/img/team-3.jpg" class="avatar avatar-sm me-3" alt="user2">
+                                                <img src="../assets/img/team-3.jpg" class="avatar avatar-sm me-3"
+                                                     alt="user2">
                                             </div>
                                             <div class="d-flex flex-column justify-content-center">
                                                 <h6 class="mb-0 text-sm">Alexa Liras</h6>
@@ -202,7 +216,8 @@
                                         <span class="text-secondary text-xs font-weight-bold">11/01/19</span>
                                     </td>
                                     <td class="align-middle">
-                                        <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip"
+                                        <a href="javascript:;" class="text-secondary font-weight-bold text-xs"
+                                           data-toggle="tooltip"
                                            data-original-title="Edit user">
                                             Edit
                                         </a>
@@ -212,7 +227,8 @@
                                     <td>
                                         <div class="d-flex px-2 py-1">
                                             <div>
-                                                <img src="../assets/img/team-4.jpg" class="avatar avatar-sm me-3" alt="user3">
+                                                <img src="../assets/img/team-4.jpg" class="avatar avatar-sm me-3"
+                                                     alt="user3">
                                             </div>
                                             <div class="d-flex flex-column justify-content-center">
                                                 <h6 class="mb-0 text-sm">Laurent Perrier</h6>
@@ -231,7 +247,8 @@
                                         <span class="text-secondary text-xs font-weight-bold">19/09/17</span>
                                     </td>
                                     <td class="align-middle">
-                                        <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip"
+                                        <a href="javascript:;" class="text-secondary font-weight-bold text-xs"
+                                           data-toggle="tooltip"
                                            data-original-title="Edit user">
                                             Edit
                                         </a>
@@ -241,7 +258,8 @@
                                     <td>
                                         <div class="d-flex px-2 py-1">
                                             <div>
-                                                <img src="../assets/img/team-3.jpg" class="avatar avatar-sm me-3" alt="user4">
+                                                <img src="../assets/img/team-3.jpg" class="avatar avatar-sm me-3"
+                                                     alt="user4">
                                             </div>
                                             <div class="d-flex flex-column justify-content-center">
                                                 <h6 class="mb-0 text-sm">Michael Levi</h6>
@@ -260,7 +278,8 @@
                                         <span class="text-secondary text-xs font-weight-bold">24/12/08</span>
                                     </td>
                                     <td class="align-middle">
-                                        <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip"
+                                        <a href="javascript:;" class="text-secondary font-weight-bold text-xs"
+                                           data-toggle="tooltip"
                                            data-original-title="Edit user">
                                             Edit
                                         </a>
@@ -270,7 +289,8 @@
                                     <td>
                                         <div class="d-flex px-2 py-1">
                                             <div>
-                                                <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3" alt="user5">
+                                                <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3"
+                                                     alt="user5">
                                             </div>
                                             <div class="d-flex flex-column justify-content-center">
                                                 <h6 class="mb-0 text-sm">Richard Gran</h6>
@@ -289,7 +309,8 @@
                                         <span class="text-secondary text-xs font-weight-bold">04/10/21</span>
                                     </td>
                                     <td class="align-middle">
-                                        <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip"
+                                        <a href="javascript:;" class="text-secondary font-weight-bold text-xs"
+                                           data-toggle="tooltip"
                                            data-original-title="Edit user">
                                             Edit
                                         </a>
@@ -299,7 +320,8 @@
                                     <td>
                                         <div class="d-flex px-2 py-1">
                                             <div>
-                                                <img src="../assets/img/team-4.jpg" class="avatar avatar-sm me-3" alt="user6">
+                                                <img src="../assets/img/team-4.jpg" class="avatar avatar-sm me-3"
+                                                     alt="user6">
                                             </div>
                                             <div class="d-flex flex-column justify-content-center">
                                                 <h6 class="mb-0 text-sm">Miriam Eric</h6>
@@ -318,7 +340,8 @@
                                         <span class="text-secondary text-xs font-weight-bold">14/09/20</span>
                                     </td>
                                     <td class="align-middle">
-                                        <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip"
+                                        <a href="javascript:;" class="text-secondary font-weight-bold text-xs"
+                                           data-toggle="tooltip"
                                            data-original-title="Edit user">
                                             Edit
                                         </a>
