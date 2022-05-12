@@ -160,8 +160,12 @@
                                             <td>{{ $product->name }}</td>
                                             <td>{{ $product->price }}</td>
                                             <td>
-                                                <button class="btn btn-warning"><a class="btn-warning" href="">Edit</a></button>
-                                                <button class="btn btn-danger "><a class="btn-danger" onclick="">Delete</a></button>
+                                                <button class="btn btn-warning"> <a class="btn-warning" href="{{url('/product/' . $product->id . '/edit')}}">Edit</a></button>
+                                                <form method="post" action="{{url('/product' .'/' .$product->id)}}">
+                                                    {{ method_field('DELETE') }}
+                                                    {{ csrf_field() }}
+                                                    <button type="submit" class="btn btn-danger " title="Delete Student" onclick="return confirm(Confirm . delete)"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</button>
+                                                </form>
                                             </td>
                                         </tr>
                                     @endforeach

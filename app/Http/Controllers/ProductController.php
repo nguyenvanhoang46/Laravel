@@ -38,7 +38,7 @@ class ProductController extends Controller
     {
         $input = $request->all();
         Product::create($input);
-        return redirect('product')->with('flash_message', 'Student Addedd!');
+        return redirect('product')->with('flash_message', 'Product Addedd!');
     }
 
     /**
@@ -60,7 +60,8 @@ class ProductController extends Controller
      */
     public function edit($id)
     {
-        //
+        $product = Product::find($id);
+        return view('admin.product.pages.edit')->with('products', $product);
     }
 
     /**
@@ -72,7 +73,10 @@ class ProductController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $product = Product::find($id);
+        $input = $request->all();
+        $product->update($input);
+        return redirect('product')->with('flash_message', 'product Updated!');
     }
 
     /**
@@ -84,6 +88,6 @@ class ProductController extends Controller
     public function destroy($id)
     {
         Product::destroy($id);
-        return redirect('product')->with('flash_message', 'Student deleted!');
+        return redirect('product')->with('flash_message', 'Product deleted!');
     }
 }

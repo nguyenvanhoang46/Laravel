@@ -155,35 +155,36 @@
                                             <h4 class="mb-4 ">Product</h4>
                                         </div>
                                         <div class="modal-body">
-                                            <form action="{{ url('product') }}" method="post" class="custom-validation">
+                                            <form action="{{ url('/product/' . $products->id) }}" method="post" class="custom-validation">
                                                 {!! csrf_field() !!}
+                                                @method("PATCH")
                                                 <div class="form-group ">
                                                     <label class=" lable-product">Name</label>
                                                     <div>
-                                                        <input class="form-control input-product" name="name" >
+                                                        <input class="form-control input-product" name="name" value="{{$products->name}}" >
                                                     </div>
                                                 </div>
                                                 <div class="form-group mt-4">
                                                     <label class="lable-product">Tag</label>
                                                     <div>
-                                                        <input class="form-control input-product" name="id_category">
+                                                        <input class="form-control input-product" name="id_category" value="{{$products->id_category}}">
                                                     </div>
                                                 </div>
                                                 <div class="form-group mt-4">
                                                     <label class="lable-product">Price</label>
                                                     <div>
-                                                        <input class="form-control input-product" name="price">
+                                                        <input class="form-control input-product" name="price" value="{{$products->price}}">
                                                     </div>
                                                 </div>
 
                                                 <div class="form-group mt-4">
                                                     <label class="lable-product">URL</label>
                                                     <div>
-                                                        <input class="form-control input-product" name="image">
+                                                        <input class="form-control input-product" name="image" value="{{$products->image}}">
                                                     </div>
                                                 </div>
                                                 <button class="btn mt-5 btn-primary add-product" type="submit">
-                                                    Add product
+                                                        Update product
                                                 </button>
                                             </form>
 

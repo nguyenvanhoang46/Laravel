@@ -29,12 +29,7 @@ Route::prefix('admin')->group(function () {
 });
 
 Route::resource("product", ProductController::class);
-Route::get('/create', function () {
-    return view('admin.product.pages.create');
-});
 
-//Route::prefix('show')->group(function () {
-//
-//});
-//Route::get('/product', 'ControllerProduct')->name('Product');
+
+
 
