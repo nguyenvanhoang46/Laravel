@@ -5,13 +5,9 @@
         .input-product {
             width: 100%;
             height: 42px;
-
             background-color: #E7E7E7;
-
-
             border-radius: 20px;
         }
-
         .lable-product {
             font-size: 17px;
         }
@@ -142,7 +138,6 @@
             </div>
         </div>
     </nav>
-
     <div>
         <div class="row">
             <div class="col-12">

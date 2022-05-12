@@ -14,7 +14,7 @@
     <link href="{{ asset('css/nucleoicons.css') }}" rel="stylesheet"/>
     <link rel="stylesheet" href="{{ asset('css/nucleo-svg.css')}}">
     <link rel="stylesheet" href="{{ asset('css/argon-dashboard.css')}}">
-
+    <link rel="stylesheet" href="">
     @yield('styles')
 
 </head>

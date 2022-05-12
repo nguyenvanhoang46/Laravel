@@ -83,6 +83,7 @@ class ProductController extends Controller
      */
     public function destroy($id)
     {
-        //
+        Product::destroy($id);
+        return redirect('product')->with('flash_message', 'Student deleted!');
     }
 }
