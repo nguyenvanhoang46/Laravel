@@ -20,4 +20,6 @@ mix.js('resources/js/app.js', 'public/js')
     .css('resources/css/nucleo-svg.css', 'public/css')
     .css('resources/css/argon-dashboard.css', 'public/css')
     .css('resources/css/index.css', 'public/css')
-    .js('resources/js/plugins/perfect-scrollbar.min.js', 'public/js');
+    .js('resources/js/plugins/perfect-scrollbar.min.js', 'public/js')
+  
+;

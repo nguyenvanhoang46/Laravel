@@ -15,7 +15,7 @@ class ProductController extends Controller
     public function index()
     {
         $products = Product::all();
-        return view ('admin.product.pages.show')->with('products', $products);
+        return view ('admin.pages.product.show')->with('products', $products);
     }
 
     /**
@@ -25,7 +25,7 @@ class ProductController extends Controller
      */
     public function create()
     {
-        return view('admin.product.pages.create');
+        return view('admin.pages.product.create');
     }
 
     /**
@@ -61,7 +61,7 @@ class ProductController extends Controller
     public function edit($id)
     {
         $product = Product::find($id);
-        return view('admin.product.pages.edit')->with('products', $product);
+        return view('admin.pages.product.edit')->with('products', $product);
     }
 
     /**

@@ -20,6 +20,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
             crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{{asset('fontawesome-free-6.1.1-web.fontawesome-free-6.1.1-web/css/all.min.css')}}">
+    <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./js/Glider.js-master/Glider.js-master/glider.min.css" />
     @yield('styles')
 </head>
@@ -31,5 +33,19 @@
 </div>
 
 @include('website.partial.footer')
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="./javascrip/render.js"></script>
+<script src="./javascrip/login.js"></script>
+
+@yield('scripts')
 </body>
 </html>
+
+{{-- Composer install --}}
+{{-- npm install --}}
+{{-- cp .env.example .env --}}
+{{-- php artisan key:generate --}}
+{{-- php artisan migrate:fresh --seed --}}{{-- // Data base--}}

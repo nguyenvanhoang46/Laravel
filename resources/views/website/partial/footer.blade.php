@@ -5,15 +5,15 @@
                 <div class="inner-col text-light mt-5">
                     <h3>THÔNG TIN LIÊN HỆ</h3>
                     <div class="flex-icon mt-4">
-                        <span><i class="fa-solid fa-location-dot"></i></span>
+                        <span><img src="/image/location.png" alt=""></span>
                         <p class="ms-2">319 C16 Lý Thường Kiệt, Phường 15,<br> Quận 11, Tp.HCM</p>
                     </div>
                     <div class="flex-icon">
-                        <span><i class="fa-solid fa-phone"></i></span>
+                        <span><img src="/image/phone-call.png" alt=""></span>
                         <p class="ms-2">076 922 0162</p>
                     </div>
                     <div class="flex-icon">
-                        <span><i class="fa-solid fa-square-envelope"></i></span>
+                        <span><img src="/image/gmail.png" alt=""></span>
                         <p class="ms-2">
                             demonhunterg@gmail.com
                             <br>
@@ -21,20 +21,15 @@
                         </p>
                     </div>
                     <div class="flex-icon">
-                        <span><i class="fa-solid fa-location-dot"></i></span>
+                        <span><img src="/image/skype.png" alt=""></span>
                         <p class="ms-2">demonhunterp</p>
                     </div>
                     <div class="social-icons">
-                        <a href="#" class=""><i
-                                class="social-icons-item text-white fa-brands fa-facebook"></i></a>
-                        <a href="#" class="ms-2 "><i
-                                class="social-icons-item text-white fa-brands fa-instagram-square"></i></a>
-                        <a href="#" class="ms-2 "><i
-                                class="social-icons-item text-white fa-brands fa-twitter-square"></i></a>
-                        <a href="#" class="ms-2 "><i
-                                class="social-icons-item text-white fa-solid fa-square-rss"></i></a>
-                        <a href="#" class="ms-2 "><i
-                                class="social-icons-item text-white fa-brands fa-linkedin"></i></a>
+                        <a href="#" class=""><img src="/image/facebook (1).png" alt=""></a>
+                        <a href="#" class="ms-2 "><img src="/image/instagram (1).png" alt=""></a>
+                        <a href="#" class="ms-2 "><img src="/image/twitter (1).png" alt=""></a>
+                        <a href="#" class="ms-2 "><img src="/image/rss.png" alt=""></a>
+                        <a href="#" class="ms-2 "><img src="/image/linkedin.png" alt=""></a>
                     </div>
                 </div>
             </div>
