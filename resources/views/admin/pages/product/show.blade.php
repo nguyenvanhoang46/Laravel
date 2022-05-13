@@ -1,4 +1,4 @@
-@extends('admin.product.layout.main_layout')
+@extends('admin.layout.main_layout')
 
 @section('content')
     <main class="main-content position-relative border-radius-lg ">
@@ -156,8 +156,8 @@
                                         <tr>
                                             <td>{{ $product->id }}</td>
                                             <td> <img src="{{ asset($product->image) }}" width= '70' height='70' class="img img-responsive"> </td>
-                                            <td>{{ $product->id_category }}</td>
                                             <td>{{ $product->name }}</td>
+                                            <td>{{ $product->id_category }}</td>
                                             <td>{{ $product->price }}</td>
                                             <td>
                                                 <button class="btn btn-warning"> <a class="btn-warning" href="{{url('/product/' . $product->id . '/edit')}}">Edit</a></button>

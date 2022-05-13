@@ -31,5 +31,11 @@ Route::prefix('admin')->group(function () {
 Route::resource("product", ProductController::class);
 
 
+Route::prefix('website')->group(function () {
+    Route::get('/', function () {
+        return view('website.pages.home_pages');
+    });
+});
+
 
 

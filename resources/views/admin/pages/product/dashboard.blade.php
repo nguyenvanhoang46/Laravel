@@ -1,4 +1,4 @@
-@extends('admin.product.layout.main_layout')
+@extends('admin.layout.main_layout')
 
 @section('styles')
 

@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet"/>
     <link href="{{asset('')}}}" rel="stylesheet"/>
     <link href="../assets/css/nucleo-icons.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="../../../../../fontawesome-free-6.1.1-web"/>
+    <link rel="stylesheet" href="../../../../fontawesome-free-6.1.1-web"/>
     <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
     <link href="{{ asset('css/nucleoicons.css') }}" rel="stylesheet"/>
     <link rel="stylesheet" href="{{ asset('css/nucleo-svg.css')}}">
@@ -21,12 +21,12 @@
 
 <body class="g-sidenav-show   bg-gray-100">
 <div class="min-height-300 bg-primary position-absolute w-100"></div>
-@include('admin.product.partial.header')
+@include('admin.partial.header')
 
 <div class="main-content px-4">
     @yield('content')
 
-    @include('admin.product.partial.footer')
+    @include('admin.partial.footer')
 </div>
 
 

@@ -1,4 +1,4 @@
-@extends('admin.product.layout.main_layout')
+@extends('admin.layout.main_layout')
 
 @section('content')
     <main class="main-content position-relative border-radius-lg ">
@@ -175,7 +175,7 @@
                 </div>
             </div>
 
-            @include('admin.product.partial.footer')
+            @include('admin.partial.footer')
 
         </div>
     </main>
