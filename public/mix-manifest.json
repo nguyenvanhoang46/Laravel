@@ -1,9 +1,12 @@
 {
     "/js/app.js": "/js/app.js",
     "/js/perfect-scrollbar.min.js": "/js/perfect-scrollbar.min.js",
+    "/js/glider.js": "/js/glider.js",
+    "/js/glider-compat.min.js": "/js/glider-compat.min.js",
     "/css/index.css": "/css/index.css",
     "/css/argon-dashboard.css": "/css/argon-dashboard.css",
     "/css/nucleo-svg.css": "/css/nucleo-svg.css",
     "/css/nucleoicons.css": "/css/nucleoicons.css",
-    "/css/app.css": "/css/app.css"
+    "/css/app.css": "/css/app.css",
+    "/css/glider.css": "/css/glider.css"
 }
