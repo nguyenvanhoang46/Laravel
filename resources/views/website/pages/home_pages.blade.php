@@ -73,10 +73,8 @@
         <div class="slider-btns">
             <h4 class="prodcut-slider-heading ms-3 pt-2">Sản phẩm bán chạy</h4>
             <div class="pt-2">
-                <button aria-label="Previous" class="glider-prev icon-slider"><i
-                        class="fa-solid fa-angle-left me-2"></i></button>
-                <button aria-label="Next" class="glider-next icon-slider"><i
-                        class="fa-solid fa-angle-right me-3"></i></button>
+                <button aria-label="Previous" class="glider-prev icon-slider"><img src="./image/left-arrow.png" alt=""></button>
+                <button aria-label="Next" class="glider-next icon-slider"><img src="./image/right-arrow.png" alt=""></button>
             </div>
         </div>
         <div class="glider-contain mt-3">
@@ -397,6 +395,7 @@
                  aria-labelledby="pills-home-tab">
                 <div id="rendenrProduct"
                      class="row ms-1 large-columns-5 medium-columns-3 small-columns-2 row-normal">
+                    @foreach($products as $prd)
                     <div class="col ">
                         <div class="mt-3 mb-4">
                             <div class="card" style="width: 14rem; height: 390px;">
@@ -420,7 +419,7 @@
                             </div>
                         </div>
                     </div>
-
+                    @endforeach
                     <!-- rendenrProduct -->
 
                 </div>
