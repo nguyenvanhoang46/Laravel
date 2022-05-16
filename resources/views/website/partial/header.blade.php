@@ -48,10 +48,11 @@
             <div class="col" style="margin-left: 100px;">
                 <div class="cart mt-3 cart-item  pe-lg-5">
                     <a href="#" class="text-light cart-item-i " onclick="showLike()">
-                        <img src="/image.shopping-cart.png" alt="">
+{{--                        <img src="/image/shopping-cart.png" alt="">--}}
                     </a>
                     <a href="#" class=" text-light ms-3" onclick="show()">
-                        <img src="/image.shopping-cart.png" alt="">
+                        <img src="/image/shopping-cart.png" alt="">
+
                     </a>
                 </div>
             </div>

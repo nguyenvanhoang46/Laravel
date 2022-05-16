@@ -41,12 +41,13 @@ Route::resource("category", \App\Http\Controllers\CategoryController::class);
 
 
 
-Route::prefix('website')->group(function () {
+Route::prefix('/')->group(function () {
     Route::get('/', function () {
         return view('website.pages.home_pages');
     });
 });
-Route::get('render', [\App\Http\Controllers\WebsiteController::class, 'index']);
+Route::get('/website', [\App\Http\Controllers\WebsiteController::class, 'index']);
+Route::get('/Add-Cart/{id}', [\App\Http\Controllers\WebsiteController::class, 'AddCart']);
 
 
 
