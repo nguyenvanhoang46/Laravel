@@ -45,8 +45,9 @@ Route::prefix('website')->group(function () {
     Route::get('/', function () {
         return view('website.pages.home_pages');
     });
-    Route::get('/', 'WebsiteController@index');
 });
+Route::get('render', [\App\Http\Controllers\WebsiteController::class, 'index']);
+
 
 
 

@@ -168,6 +168,7 @@
                                                     <label class="lable-product">Tag</label>
                                                     <div>
                                                         <input class="form-control input-product" name="id_category" value="{{$products->id_category}}">
+{{--                                                        <select name="" id="" value="{{$products->category->name}} ></select>--}}
                                                     </div>
                                                 </div>
                                                 <div class="form-group mt-4">

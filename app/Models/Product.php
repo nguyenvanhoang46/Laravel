@@ -5,15 +5,16 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use App\Models\Category;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Product extends Model
 {
-    protected $table = 'products';
-    protected $primaryKey ='id';
-    protected $fillable = ['image','id_category', 'name', 'price'];
+    use HasFactory;
 
-    public function category () {
+    protected $fillable = ['image', 'category_id', 'name', 'price'];
+
+    public function category(): BelongsTo
+    {
         return $this->belongsTo(Category::class);
     }
-    use HasFactory;
 }

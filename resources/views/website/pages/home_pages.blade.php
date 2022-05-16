@@ -5,7 +5,8 @@
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/slide-bg-2.jpg" class="d-block w-100" alt="...">
+                    <img src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/slide-bg-2.jpg"
+                         class="d-block w-100" alt="...">
                     <div class="carousel-caption carousel-caption-item d-none d-md-block">
                         <h4 style="padding-right: 200px;">Mona Watch</h4>
                         <h1 style="">Đồng hồ Classico</h1>
@@ -18,7 +19,8 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/slide-bg-1.jpg" class="d-block w-100" alt="...">
+                    <img src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/slide-bg-1.jpg"
+                         class="d-block w-100" alt="...">
                     <div class="carousel-caption carousel-caption-item d-none d-md-block">
                         <h4 style="padding-right: 200px;">Mona Watch</h4>
                         <h1 style="">Đồng hồ Classico</h1>
@@ -32,11 +34,13 @@
                 </div>
 
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
@@ -73,8 +77,10 @@
         <div class="slider-btns">
             <h4 class="prodcut-slider-heading ms-3 pt-2">Sản phẩm bán chạy</h4>
             <div class="pt-2">
-                <button aria-label="Previous" class="glider-prev icon-slider"><img src="./image/left-arrow.png" alt=""></button>
-                <button aria-label="Next" class="glider-next icon-slider"><img src="./image/right-arrow.png" alt=""></button>
+                <button aria-label="Previous" class="glider-prev icon-slider"><img src="./image/left-arrow.png" alt="">
+                </button>
+                <button aria-label="Next" class="glider-next icon-slider"><img src="./image/right-arrow.png" alt="">
+                </button>
             </div>
         </div>
         <div class="glider-contain mt-3">
@@ -85,8 +91,9 @@
                     <div class="p-img-container">
                         <div class="p-img">
                             <a href="./productdetails.html">
-                                <img src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-02-300x300.png"
-                                     class="p-img-front image" alt="">
+                                <img
+                                    src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-02-300x300.png"
+                                    class="p-img-front image" alt="">
                                 <!-- <img src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-04-600x700.png" class="p-img-back" alt=""> -->
                             </a>
                         </div>
@@ -112,8 +119,9 @@
                     <div class="p-img-container">
                         <div class="p-img">
                             <a href="#">
-                                <img src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-05.png"
-                                     class="p-img-front image " alt="">
+                                <img
+                                    src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-05.png"
+                                    class="p-img-front image " alt="">
                                 <!-- <img src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-04-600x700.png" class="p-img-back" alt=""> -->
                             </a>
                         </div>
@@ -138,8 +146,9 @@
                     <div class="p-img-container">
                         <div class="p-img">
                             <a href="#">
-                                <img src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-04.png"
-                                     class="p-img-front image" alt="">
+                                <img
+                                    src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-04.png"
+                                    class="p-img-front image" alt="">
                                 <!-- <img src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-04-600x700.png" class="p-img-back" alt=""> -->
                             </a>
                         </div>
@@ -164,8 +173,9 @@
                     <div class="p-img-container">
                         <div class="p-img">
                             <a href="#">
-                                <img src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-03.png"
-                                     class="p-img-front image " alt="">
+                                <img
+                                    src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-03.png"
+                                    class="p-img-front image " alt="">
                                 <!-- <img src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-04-600x700.png" class="p-img-back" alt=""> -->
                             </a>
                         </div>
@@ -190,8 +200,9 @@
                     <div class="p-img-container">
                         <div class="p-img">
                             <a href="#">
-                                <img src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-02-300x300.png"
-                                     class="p-img-front image " alt="">
+                                <img
+                                    src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-02-300x300.png"
+                                    class="p-img-front image " alt="">
                                 <!-- <img src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-04-600x700.png" class="p-img-back" alt=""> -->
                             </a>
                         </div>
@@ -216,8 +227,9 @@
                     <div class="p-img-container">
                         <div class="p-img">
                             <a href="#">
-                                <img src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-01.png"
-                                     class="p-img-front image " alt="">
+                                <img
+                                    src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-01.png"
+                                    class="p-img-front image " alt="">
                                 <!-- <img src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-04-600x700.png" class="p-img-back" alt=""> -->
                             </a>
                         </div>
@@ -242,8 +254,9 @@
                     <div class="p-img-container">
                         <div class="p-img">
                             <a href="#">
-                                <img src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-04.png"
-                                     class="p-img-front image " alt="">
+                                <img
+                                    src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-04.png"
+                                    class="p-img-front image " alt="">
                                 <!-- <img src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-04-600x700.png" class="p-img-back" alt=""> -->
                             </a>
                         </div>
@@ -268,8 +281,9 @@
                     <div class="p-img-container">
                         <div class="p-img">
                             <a href="#">
-                                <img src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-14.jpg"
-                                     class="p-img-front image " alt="">
+                                <img
+                                    src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-14.jpg"
+                                    class="p-img-front image " alt="">
                                 <!-- <img src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-04-600x700.png" class="p-img-back" alt=""> -->
                             </a>
                         </div>
@@ -293,8 +307,9 @@
                     <div class="p-img-container">
                         <div class="p-img">
                             <a href="#">
-                                <img src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-16.jpg"
-                                     class="p-img-front image " alt="">
+                                <img
+                                    src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-16.jpg"
+                                    class="p-img-front image " alt="">
                                 <!-- <img src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-04-600x700.png" class="p-img-back" alt=""> -->
                             </a>
                         </div>
@@ -319,8 +334,9 @@
                     <div class="p-img-container">
                         <div class="p-img">
                             <a href="#">
-                                <img src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-10.jpg"
-                                     class="p-img-front image " alt="">
+                                <img
+                                    src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-10.jpg"
+                                    class="p-img-front image " alt="">
 
                             </a>
                         </div>
@@ -377,17 +393,20 @@
             <li class="nav-item" role="presentation">
                 <button class="nav-link nav-link-item  active" id="pills-home-tab" data-bs-toggle="pill"
                         data-bs-target="#pills-home" type="" role="tab" aria-controls="pills-home"
-                        aria-selected="true">Sản phẩm phổ biến</button>
+                        aria-selected="true">Sản phẩm phổ biến
+                </button>
             </li>
             <li class="nav-item" role="presentation">
                 <button class="nav-link nav-link-item" id="pills-profile-tab" data-bs-toggle="pill"
                         data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
-                        aria-selected="false">Sản phẩm khuyết mãi</button>
+                        aria-selected="false">Sản phẩm khuyết mãi
+                </button>
             </li>
             <li class="nav-item" role="presentation">
                 <button class="nav-link nav-link-item" id="pills-contact-tab" data-bs-toggle="pill"
                         data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
-                        aria-selected="false">Sản phẩm mới</button>
+                        aria-selected="false">Sản phẩm mới
+                </button>
             </li>
         </ul>
         <div class="tab-content" id="pills-tabContent">
@@ -395,31 +414,34 @@
                  aria-labelledby="pills-home-tab">
                 <div id="rendenrProduct"
                      class="row ms-1 large-columns-5 medium-columns-3 small-columns-2 row-normal">
-                    @foreach($products as $prd)
-                    <div class="col ">
-                        <div class="mt-3 mb-4">
-                            <div class="card" style="width: 14rem; height: 390px;">
+                    @foreach($products as $product)
+                        <div class="col ">
+                            <div class="mt-3 mb-4">
+                                <div class="card" style="width: 14rem; height: 390px;">
                                         <span class="heart-icon-cart mt-2"><button
                                                 class="btn fa-solid fa-heart icon add-like"></button></span>
-                                <img src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-16.jpg"
-                                     class="card-img-top image image" alt="...">
-                                <div class="card-body">
-                                    <div class="card-body-item ms-2">
-                                        <h6 class="card-title ms-5 ten-item-column ">Classico 11</h6>
-                                        <p class="card-text ms-3">
-                                            <span class="strike"> <strike>700,000 <u>đ</u></strike> </span>
-                                            <span class="span-price gia">500,000 <u>đ</u></span>
-                                        </p>
-                                        <button
-                                            class="btn text-light ms-4 cart-slider add-to-cart add-to-cart">Thêm
-                                            vào giỏ</button>
+                                    <img
+                                        src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-16.jpg"
+                                        class="card-img-top image image" alt="...">
+                                    <div class="card-body">
+                                        <div class="card-body-item ms-2">
+                                            <h6 class="card-title ms-5 ten-item-column ">Classico 11</h6>
+                                            <p class="card-text ms-3">
+                                                <span class="strike"> <strike>700,000 <u>đ</u></strike> </span>
+                                                <span class="span-price gia">500,000 <u>đ</u></span>
+                                            </p>
+                                            <button
+                                                class="btn text-light ms-4 cart-slider add-to-cart add-to-cart">Thêm
+                                                vào giỏ
+                                            </button>
 
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
                     @endforeach
+
                     <!-- rendenrProduct -->
 
                 </div>
@@ -430,8 +452,9 @@
                         <div class="mt-3 mb-4">
                             <div class="card" style="width: 14rem; height: 390px;">
                                 <span class="heart-icon-cart mt-2"><i class="fa-solid fa-heart icon"></i></span>
-                                <img src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-07.jpg"
-                                     class="card-img-top image" alt="...">
+                                <img
+                                    src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-07.jpg"
+                                    class="card-img-top image" alt="...">
                                 <div class="card-body">
                                     <div class="card-body-item ms-2">
                                         <h6 class="card-title ms-5 ten-item-column">Classico 12</h6>
@@ -450,8 +473,9 @@
                         <div class="mt-3 mb-4">
                             <div class="card" style="width: 14rem; height: 390px;">
                                 <span class="heart-icon-cart mt-2"><i class="fa-solid fa-heart icon"></i></span>
-                                <img src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-14.jpg"
-                                     class="card-img-top image" alt="...">
+                                <img
+                                    src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-14.jpg"
+                                    class="card-img-top image" alt="...">
                                 <div class="card-body">
                                     <div class="card-body-item ms-2">
                                         <h6 class="card-title ms-5 ten-item-column">Classico 13</h6>
@@ -470,8 +494,9 @@
                         <div class="mt-3 mb-4">
                             <div class="card" style="width: 14rem; height: 390px;">
                                 <span class="heart-icon-cart mt-2"><i class="fa-solid fa-heart icon"></i></span>
-                                <img src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-10.jpg"
-                                     class="card-img-top image" alt="...">
+                                <img
+                                    src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-10.jpg"
+                                    class="card-img-top image" alt="...">
                                 <div class="card-body">
                                     <div class="card-body-item ms-2">
                                         <h6 class="card-title ms-5 ten-item-column">Classico 14</h6>
@@ -490,8 +515,9 @@
                         <div class="mt-3 mb-4">
                             <div class="card" style="width: 14rem; height: 390px;">
                                 <span class="heart-icon-cart mt-2"><i class="fa-solid fa-heart icon"></i></span>
-                                <img src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-16.jpg"
-                                     class="card-img-top image" alt="...">
+                                <img
+                                    src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-16.jpg"
+                                    class="card-img-top image" alt="...">
                                 <div class="card-body">
                                     <div class="card-body-item ms-2">
                                         <h6 class="card-title ms-5 ten-item-column">Classico 15</h6>
@@ -510,8 +536,9 @@
                         <div class="mt-3 mb-4">
                             <div class="card" style="width: 14rem; height: 390px;">
                                 <span class="heart-icon-cart mt-2"><i class="fa-solid fa-heart icon"></i></span>
-                                <img src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-11.jpg"
-                                     class="card-img-top image" alt="...">
+                                <img
+                                    src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-11.jpg"
+                                    class="card-img-top image" alt="...">
                                 <div class="card-body">
                                     <div class="card-body-item ms-2">
                                         <h6 class="card-title ms-5 ten-item-column">Classico 16</h6>
@@ -530,8 +557,9 @@
                         <div class="mt-3 mb-4">
                             <div class="card" style="width: 14rem; height: 390px;">
                                 <span class="heart-icon-cart mt-2"><i class="fa-solid fa-heart icon"></i></span>
-                                <img src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-09.jpg"
-                                     class="card-img-top image" alt="...">
+                                <img
+                                    src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-09.jpg"
+                                    class="card-img-top image" alt="...">
                                 <div class="card-body">
                                     <div class="card-body-item ms-2">
                                         <h6 class="card-title ms-5 ten-item-column">Classico 17</h6>
@@ -550,8 +578,9 @@
                         <div class="mt-3 mb-4">
                             <div class="card" style="width: 14rem; height: 390px;">
                                 <span class="heart-icon-cart mt-2"><i class="fa-solid fa-heart icon"></i></span>
-                                <img src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-13.jpg"
-                                     class="card-img-top image" alt="...">
+                                <img
+                                    src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-13.jpg"
+                                    class="card-img-top image" alt="...">
                                 <div class="card-body">
                                     <div class="card-body-item ms-2">
                                         <h6 class="card-title ms-5 ten-item-column">Classico 18</h6>
@@ -570,8 +599,9 @@
                         <div class="mt-3 mb-4">
                             <div class="card" style="width: 14rem; height: 390px;">
                                 <span class="heart-icon-cart mt-2"><i class="fa-solid fa-heart icon"></i></span>
-                                <img src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-06.jpg"
-                                     class="card-img-top image" alt="...">
+                                <img
+                                    src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-06.jpg"
+                                    class="card-img-top image" alt="...">
                                 <div class="card-body">
                                     <div class="card-body-item ms-2">
                                         <h6 class="card-title ms-5 ten-item-column">Classico 19</h6>
@@ -590,8 +620,9 @@
                         <div class="mt-3 mb-4">
                             <div class="card" style="width: 14rem; height: 390px;">
                                 <span class="heart-icon-cart mt-2"><i class="fa-solid fa-heart icon"></i></span>
-                                <img src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-12.jpg"
-                                     class="card-img-top image" alt="...">
+                                <img
+                                    src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-12.jpg"
+                                    class="card-img-top image" alt="...">
                                 <div class="card-body">
                                     <div class="card-body-item ms-2">
                                         <h6 class="card-title ms-5 ten-item-column">Classico 20</h6>
@@ -610,8 +641,9 @@
                         <div class="mt-3 mb-4">
                             <div class="card" style="width: 14rem; height: 390px;">
                                 <span class="heart-icon-cart mt-2"><i class="fa-solid fa-heart icon"></i></span>
-                                <img src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-08.jpg"
-                                     class="card-img-top image" alt="...">
+                                <img
+                                    src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-08.jpg"
+                                    class="card-img-top image" alt="...">
                                 <div class="card-body">
                                     <div class="card-body-item ms-2">
                                         <h6 class="card-title ms-5 ten-item-column">Classico 21</h6>
@@ -634,8 +666,9 @@
                         <div class="mt-3 mb-4">
                             <div class="card" style="width: 14rem; height: 390px;">
                                 <span class="heart-icon-cart mt-2"><i class="fa-solid fa-heart icon"></i></span>
-                                <img src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-16.jpg"
-                                     class="card-img-top image" alt="...">
+                                <img
+                                    src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-16.jpg"
+                                    class="card-img-top image" alt="...">
                                 <div class="card-body">
                                     <div class="card-body-item ms-2">
                                         <h6 class="card-title ms-5 ten-item-column">Classico 22</h6>
@@ -654,8 +687,9 @@
                         <div class="mt-3 mb-4">
                             <div class="card" style="width: 14rem; height: 390px;">
                                 <span class="heart-icon-cart mt-2"><i class="fa-solid fa-heart icon"></i></span>
-                                <img src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-03.png"
-                                     class="card-img-top image" alt="...">
+                                <img
+                                    src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-03.png"
+                                    class="card-img-top image" alt="...">
                                 <div class="card-body">
                                     <div class="card-body-item ms-2">
                                         <h6 class="card-title ms-5 ten-item-column">Classico 23</h6>
@@ -674,8 +708,9 @@
                         <div class="mt-3 mb-4">
                             <div class="card" style="width: 14rem; height: 390px;">
                                 <span class="heart-icon-cart mt-2"><i class="fa-solid fa-heart icon"></i></span>
-                                <img src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-13.jpg"
-                                     class="card-img-top image" alt="...">
+                                <img
+                                    src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-13.jpg"
+                                    class="card-img-top image" alt="...">
                                 <div class="card-body">
                                     <div class="card-body-item ms-2">
                                         <h6 class="card-title ms-5 ten-item-column">Classico 24</h6>
@@ -694,8 +729,9 @@
                         <div class="mt-3 mb-4">
                             <div class="card" style="width: 14rem; height: 390px;">
                                 <span class="heart-icon-cart mt-2"><i class="fa-solid fa-heart icon"></i></span>
-                                <img src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-05.png"
-                                     class="card-img-top image" alt="...">
+                                <img
+                                    src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-05.png"
+                                    class="card-img-top image" alt="...">
                                 <div class="card-body">
                                     <div class="card-body-item ms-2">
                                         <h6 class="card-title ms-5 ten-item-column">Classico 25</h6>
@@ -714,8 +750,9 @@
                         <div class="mt-3 mb-4">
                             <div class="card" style="width: 14rem; height: 390px;">
                                 <span class="heart-icon-cart mt-2"><i class="fa-solid fa-heart icon"></i></span>
-                                <img src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-08.jpg"
-                                     class="card-img-top image" alt="...">
+                                <img
+                                    src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-08.jpg"
+                                    class="card-img-top image" alt="...">
                                 <div class="card-body">
                                     <div class="card-body-item ms-2">
                                         <h6 class="card-title ms-5 ten-item-column">Classico 26</h6>
@@ -734,8 +771,9 @@
                         <div class="mt-3 mb-4">
                             <div class="card" style="width: 14rem; height: 390px;">
                                 <span class="heart-icon-cart mt-2"><i class="fa-solid fa-heart icon"></i></span>
-                                <img src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-01.png"
-                                     class="card-img-top image" alt="...">
+                                <img
+                                    src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-01.png"
+                                    class="card-img-top image" alt="...">
                                 <div class="card-body">
                                     <div class="card-body-item ms-2">
                                         <h6 class="card-title ms-5 ten-item-column">Classico 27</h6>
@@ -754,8 +792,9 @@
                         <div class="mt-3 mb-4">
                             <div class="card" style="width: 14rem; height: 390px;">
                                 <span class="heart-icon-cart mt-2"><i class="fa-solid fa-heart icon"></i></span>
-                                <img src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-06.jpg"
-                                     class="card-img-top image" alt="...">
+                                <img
+                                    src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-06.jpg"
+                                    class="card-img-top image" alt="...">
                                 <div class="card-body">
                                     <div class="card-body-item ms-2">
                                         <h6 class="card-title ms-5 ten-item-column">Classico 4</h6>
@@ -774,8 +813,9 @@
                         <div class="mt-3 mb-4">
                             <div class="card" style="width: 14rem; height: 390px;">
                                 <span class="heart-icon-cart mt-2"><i class="fa-solid fa-heart icon"></i></span>
-                                <img src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-04.png"
-                                     class="card-img-top image" alt="...">
+                                <img
+                                    src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-04.png"
+                                    class="card-img-top image" alt="...">
                                 <div class="card-body">
                                     <div class="card-body-item ms-2">
                                         <h6 class="card-title ms-5 ten-item-column">Classico 4</h6>
@@ -794,8 +834,9 @@
                         <div class="mt-3 mb-4">
                             <div class="card" style="width: 14rem; height: 390px;">
                                 <span class="heart-icon-cart mt-2"><i class="fa-solid fa-heart icon"></i></span>
-                                <img src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-14.jpg"
-                                     class="card-img-top image" alt="...">
+                                <img
+                                    src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-14.jpg"
+                                    class="card-img-top image" alt="...">
                                 <div class="card-body">
                                     <div class="card-body-item ms-2">
                                         <h6 class="card-title ms-5 ten-item-column ">Classico 4</h6>
@@ -814,8 +855,9 @@
                         <div class="mt-3 mb-4">
                             <div class="card" style="width: 14rem; height: 390px;">
                                 <span class="heart-icon-cart mt-2"><i class="fa-solid fa-heart icon"></i></span>
-                                <img src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-09.jpg"
-                                     class="card-img-top image" alt="...">
+                                <img
+                                    src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-09.jpg"
+                                    class="card-img-top image" alt="...">
                                 <div class="card-body">
                                     <div class="card-body-item ms-2">
                                         <h6 class="card-title ms-5 ten-item-column">Classico 4</h6>

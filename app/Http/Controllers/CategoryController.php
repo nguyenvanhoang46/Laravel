@@ -14,7 +14,8 @@ class CategoryController extends Controller
      */
     public function index()
     {
-       $categorys = Category::all();
+       $categorys = Category::with('products')->get();
+       dd($categorys->products());
        return view('admin.pages.category.list_category')->with('categorys', $categorys);
     }
 

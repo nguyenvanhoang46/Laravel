@@ -157,7 +157,7 @@
                                             <td>{{ $product->id }}</td>
                                             <td> <img src="{{ asset($product->image) }}" width= '70' height='70' class="img img-responsive"> </td>
                                             <td>{{ $product->name }}</td>
-                                            <td>{{ $product->id_category }}</td>
+                                            <td>{{ $product->category->name }}</td>
                                             <td>{{ $product->price }}</td>
                                             <td>
                                                 <button class="btn btn-warning"> <a class="btn-warning" href="{{url('/product/' . $product->id . '/edit')}}">Edit</a></button>

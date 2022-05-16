@@ -165,7 +165,7 @@
                                                 <div class="form-group mt-4">
                                                     <label class="lable-product">Tag</label>
                                                     <div>
-                                                        <input class="form-control input-product" name="id_category">
+                                                        <input class="form-control input-product" name="category_id">
                                                     </div>
                                                 </div>
                                                 <div class="form-group mt-4">

@@ -4,17 +4,18 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use phpDocumentor\Reflection\DocBlock\Description;
 
 class Category extends Model
 {
-    protected $table = 'categorys';
-    protected $primaryKey = 'id';
+    use HasFactory;
+
     protected $fillable = ['name', 'description'];
 
-    public function Category() {
-    return $this->hasMany(Product::class, 'id_category', 'id');
-}
+    public function products(): HasMany
+    {
+        return $this->hasMany(Product::class);
+    }
 
-    use HasFactory;
 }

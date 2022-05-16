@@ -14,7 +14,8 @@ class ProductController extends Controller
      */
     public function index()
     {
-        $products = Product::all();
+        $products = Product::with('category')->get();
+//        dd($products->toArray());
         return view ('admin.pages.product.show')->with('products', $products);
     }
 
