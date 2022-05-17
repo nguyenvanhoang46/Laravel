@@ -427,10 +427,10 @@
                                         <div class="card-body-item ms-2">
                                             <h6 class="card-title ms-5 ten-item-column ">{{$product->name}}</h6>
                                             <p class="card-text ms-3">
-                                                <span class="span-price gia ms-4">{{$product->price}} <u>đ</u></span>
+                                                <span class="span-price gia ms-4">{{number_format($product->price)}} <u>đ</u></span>
                                             </p>
-                                            <button class="btn text-light ms-4 cart-slider add-to-cart add-to-cart"><a
-                                                    href="{{url('/Add-Cart/' .$product->id)}}"> Thêm sản phẩm</a>
+                                            <button class="btn text-light ms-4 cart-slider add-to-cart add-to-cart">
+                                                <a onclick="AddCart({{$product->id}})" href="javascript:"> Thêm sản phẩm</a>
                                             </button>
                                         </div>
                                     </div>
@@ -939,6 +939,8 @@
     </div>
 @endsection
 
+
+
 @section('scripts')
     <script>
         new Glider(document.querySelector('.glider'), {
@@ -951,5 +953,30 @@
                 next: '.glider-next'
             }
         });
+    </script>
+    <script>
+        function AddCart(id) {
+            $.ajax({
+                url: 'Add-Cart/'+id,
+                type: 'GET',
+            }).done(function (response) {
+                RenderCart(response);
+                alertify.success('Đã thêm giỏ hàng thành công');
+            });
+        }
+        $("#change-item-cart").on("click", ".img-close" , function () {
+            $.ajax({
+                url: 'Delete-Item-Cart/'+$(this).data("id"),
+                type: 'GET',
+            }).done(function (response) {
+                RenderCart(response);
+                alertify.success('Đã xoá sản phẩm thành công');
+            });
+        });
+        function RenderCart(response) {
+            $("#change-item-cart").empty();
+            $("#change-item-cart").html(response);
+            $("#total-quantity-show").text($("#total-quantity-cart").val());
+        }
     </script>
 @endsection

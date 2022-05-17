@@ -7,7 +7,7 @@ class Cart{
     public $totalPrice = 0;
     public $totalQuantity = 0;
 
-    public function __constant($cart) {
+    public function __construct($cart) {
         if ($cart) {
             $this->products = $cart->products;
             $this->totalPrice = $cart->totalPrice;
@@ -19,14 +19,20 @@ class Cart{
     public function AddCart($product, $id) {
         $newProduct = ['quantity' => 0, 'price' =>  $product->price, 'productInfo' => $product];
         if ($this->products) {
-            if (array_key_exists($id, $product)) {
-                $newProduct = $product[$id];
+            if (array_key_exists($id, $this->products)) {
+                $newProduct = $this->products[$id];
             }
         }
         $newProduct['quantity'] ++;
         $newProduct['price'] = $newProduct['quantity'] * $product->price;
         $this->products[$id] = $newProduct;
-//        $this->totalPrice[$id] = $product->price;
+        $this->totalPrice += $product->price;
         $this->totalQuantity++;
+    }
+
+    public function DeleteItemCart($id) {
+        $this->totalQuantity -= $this->products[$id]['quantity']; // chính nó trừ đi số lượng loại bỏ
+        $this->totalPrice -= $this->products[$id]['price'];      // giá hiện tại trừ đi giá loại bỏ
+        unset($this->products[$id]);
     }
 }
