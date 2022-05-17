@@ -46,16 +46,72 @@
                 </div>
             </div>
             <div class="col" style="margin-left: 100px;">
-                <div class="cart mt-3 cart-item  pe-lg-5">
-                    <a href="#" class="text-light cart-item-i " onclick="showLike()">
-{{--                        <img src="/image/shopping-cart.png" alt="">--}}
-                    </a>
-                    <a href="#" class=" text-light ms-3" onclick="show()">
-                        <img src="/image/shopping-cart.png" alt="">
+                <div class="cart mt-3 cart-item d-flex  pe-lg-5">
+                    <div>
+                        <a href="#" class="text-light cart-item-i " onclick="showLike()">
+                            <i class="fa-solid fa-heart"></i>
+                        </a>
+                    </div>
+                    <div class="haeder-navbar-item">
+                        <a href="#" class="text-light ms-3" onclick="show()">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </a>
+                        <div class="header-item"></div>
+                        <div class="header-nofify">
+                            <div class="mx-5 cart-shopping">
+                                <div class="p-4">
+                                    <div class="select-items">
+                                        <table class="">
+                                            <tbody>
+                                            <tr class="mt-5">
+                                                <td class="si-pic"><img class="img-cart"
+                                                                        src="hhttps://cdn3.dhht.vn/wp-content/uploads/2017/09/35_MTP-1302D-7A1VDF-399x399.jpg"
+                                                                        alt="">
+                                                </td>
+                                                <td class="mx-4 si-text">
+                                                    <div class="product-selected">
+                                                        <p class="cart-price-item">₫60.00 x 1</p>
+                                                        <h6>Kabino Bedside Table</h6>
+                                                    </div>
+                                                </td>
+                                                <td class="si-close">
+                                                    <i class="ti-close"></i>
+                                                </td>
+                                            </tr>
+                                            <tr class="mt-5">
+                                                <td class="si-pic"><img class="img-cart"
+                                                                        src="http://127.0.0.1:5500/Template/img/products/product-1.jpg"
+                                                                        alt="">
+                                                </td>
+                                                <td class="mx-4 si-text">
+                                                    <div class="product-selected">
+                                                        <p class="cart-price-item">₫60.00 x 1</p>
+                                                        <h6>Kabino Bedside Table</h6>
+                                                    </div>
+                                                </td>
+                                                <td class="si-close">
+                                                    <i class="ti-close"></i>
+                                                </td>
+                                            </tr>
 
-                    </a>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="select-total d-flex">
+                                        <span>total:</span>
+                                        <h5>₫120.00</h5>
+                                    </div>
+                                    <div class="select-button">
+                                        <div><a href="#" class="primary-btn view-card">VIEW CARD</a></div>
+                                        <div><a href="#" class="primary-btn checkout-btn">CHECK OUT</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-            </div>
 {{--            <div class="column-cart gio_hang" id="displayBlock">--}}
 {{--                <div class="cart-total">--}}
 {{--                    <strong class="cart-total-title">Tổng Tiền: </strong>--}}
@@ -92,4 +148,5 @@
             </li>
         </ul>
     </div>
+</div>
 </div>
