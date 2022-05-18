@@ -41,7 +41,7 @@
                 <div class="search pt-3">
                     <form action="#" class="form-search ">
                         <input type="search" class="input-search " placeholder="Tìm kiếm...">
-                        <button class="button-i button"><img src="/image/loupe.png" alt=""></button>
+                        <button class="button-i button"><i class="fas fa-search"></i></button>
                     </form>
                 </div>
             </div>
@@ -49,12 +49,12 @@
                 <div class="cart mt-3 cart-item d-flex  pe-lg-5">
                     <div>
                         <a href="#" class="text-light cart-item-i " onclick="showLike()">
-                            <i class="fa-solid fa-heart"></i>
+                            <i class="fas fa-heart"></i>
                         </a>
                     </div>
                     <div class="haeder-navbar-item">
                         <a href="#" class="text-light ms-3" onclick="show()">
-                            <img src="./image/shopping-cart.png" alt="">
+                            <i class="fas fa-shopping-cart"></i>
 {{--                            @if(Session::has("Cart") != null)--}}
 {{--                                <span id="total-quantity-show">{{(Session::get("Cart")->totalQuantity}}</span>--}}
 {{--                            @else--}}

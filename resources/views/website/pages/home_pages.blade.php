@@ -86,8 +86,8 @@
         <div class="glider-contain mt-3">
             <div class="glider">
                 <div class="product-box">
-                            <span class="p-discount"><button
-                                    class="btn fa-solid fa-heart icon add-like"></button></span>
+                    <span class="p-discount"><i class="far fa-heart"></i></span>
+
                     <div class="p-img-container">
                         <div class="p-img">
                             <a href="./productdetails.html">
@@ -114,8 +114,8 @@
                 </div>
 
                 <div class="product-box">
-                            <span class="p-discount"><button
-                                    class="btn fa-solid fa-heart icon add-like"></button></span>
+                    <span class="p-discount"><i class="far fa-heart"></i></span>
+
                     <div class="p-img-container">
                         <div class="p-img">
                             <a href="#">
@@ -141,8 +141,8 @@
 
                 </div>
                 <div class="product-box">
-                            <span class="p-discount"><button
-                                    class="btn fa-solid fa-heart icon add-like"></button></span>
+                    <span class="p-discount"><i class="far fa-heart"></i></span>
+
                     <div class="p-img-container">
                         <div class="p-img">
                             <a href="#">
@@ -168,8 +168,7 @@
 
                 </div>
                 <div class="product-box">
-                            <span class="p-discount"><button
-                                    class="btn fa-solid fa-heart icon add-like"></button></span>
+                    <span class="p-discount"><i class="far fa-heart"></i></span>
                     <div class="p-img-container">
                         <div class="p-img">
                             <a href="#">
@@ -195,8 +194,8 @@
 
                 </div>
                 <div class="product-box">
-                            <span class="p-discount"><button
-                                    class="btn fa-solid fa-heart icon add-like"></button></span>
+                    <span class="p-discount"><i class="far fa-heart"></i></span>
+
                     <div class="p-img-container">
                         <div class="p-img">
                             <a href="#">
@@ -222,8 +221,8 @@
 
                 </div>
                 <div class="product-box">
-                            <span class="p-discount"><button
-                                    class="btn fa-solid fa-heart icon add-like"></button></span>
+                    <span class="p-discount"><i class="far fa-heart"></i></span>
+
                     <div class="p-img-container">
                         <div class="p-img">
                             <a href="#">
@@ -249,8 +248,8 @@
 
                 </div>
                 <div class="product-box">
-                            <span class="p-discount"><button
-                                    class="btn fa-solid fa-heart icon add-like"></button></span>
+                    <span class="p-discount"><i class="far fa-heart"></i></span>
+
                     <div class="p-img-container">
                         <div class="p-img">
                             <a href="#">
@@ -276,8 +275,8 @@
 
                 </div>
                 <div class="product-box">
-                            <span class="p-discount"><button
-                                    class="btn fa-solid fa-heart icon add-like"></button></span>
+                    <span class="p-discount"><i class="far fa-heart"></i></span>
+
                     <div class="p-img-container">
                         <div class="p-img">
                             <a href="#">
@@ -297,13 +296,12 @@
                                 <span class="span-price gia">500,000 <u>đ</u></span>
                             </p>
                             <button class="btn text-light ms-3 cart-slider add-to-cart ">Thêm vào giỏ</button>
-
                         </div>
                     </div>
                 </div>
                 <div class="product-box">
-                            <span class="p-discount"><button
-                                    class="btn fa-solid fa-heart icon add-like"></button></span>
+                    <span class="p-discount"><i class="far fa-heart"></i></span>
+
                     <div class="p-img-container">
                         <div class="p-img">
                             <a href="#">
@@ -329,8 +327,8 @@
 
                 </div>
                 <div class="product-box">
-                            <span class="p-discount"><button
-                                    class="btn fa-solid fa-heart icon add-like"></button></span>
+                    <span class="p-discount"><i class="far fa-heart"></i></span>
+
                     <div class="p-img-container">
                         <div class="p-img">
                             <a href="#">
@@ -418,11 +416,11 @@
                         <div class="col ">
                             <div class="mt-3 mb-4">
                                 <div class="card" style="width: 14rem; height: 390px;">
-                                        <span class="heart-icon-cart mt-2"><button
-                                                class="btn fa-solid fa-heart icon add-like"></button></span>
-                                    <img
-                                        src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-16.jpg"
-                                        class="card-img-top image image" alt="...">
+                                        <span class="heart-icon-cart mt-2">
+                                            <i class=" far fa-heart"></i>
+                                        </span>
+
+                                    <img src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-16.jpg" class="card-img-top image image" alt="...">
                                     <div class="card-body">
                                         <div class="card-body-item ms-2">
                                             <h6 class="card-title ms-5 ten-item-column ">{{$product->name}}</h6>
@@ -430,7 +428,7 @@
                                                 <span class="span-price gia ms-4">{{number_format($product->price)}} <u>đ</u></span>
                                             </p>
                                             <button class="btn text-light ms-4 cart-slider add-to-cart add-to-cart">
-                                                <a onclick="AddCart({{$product->id}})" href="javascript:"> Thêm sản phẩm</a>
+                                                <a class="addCart-item" onclick="AddCart({{$product->id}})" href="javascript:"> Thêm sản phẩm</a>
                                             </button>
                                         </div>
                                     </div>
@@ -448,7 +446,7 @@
                     <div class="col">
                         <div class="mt-3 mb-4">
                             <div class="card" style="width: 14rem; height: 390px;">
-                                <span class="heart-icon-cart mt-2"><i class="fa-solid fa-heart icon"></i></span>
+                                <span class="p-discount"><i class="fal fa-heart"></i></span>
                                 <img
                                     src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-07.jpg"
                                     class="card-img-top image" alt="...">
