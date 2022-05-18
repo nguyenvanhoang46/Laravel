@@ -38,4 +38,8 @@ class WebsiteController extends Controller
         }
         return view('website.pages.cart');
     }
+
+    public function ViewListCart() {
+        return view('website.pages.list');
+    }
 }

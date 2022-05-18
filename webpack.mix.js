@@ -22,6 +22,7 @@ mix.js('resources/js/app.js', 'public/js')
     .css('resources/css/index.css', 'public/css')
     .css('resources/css/glider.css', 'public/css')
     .css('resources/css/style.css', 'public/css')
+    .css('resources/css/cart.css', 'public/css')
     .js('resources/js/plugins/perfect-scrollbar.min.js', 'public/js')
     .js('resources/js/plugins/glider.js', 'public/js')
     .js('resources/js/plugins/glider-compat.min.js', 'public/js');

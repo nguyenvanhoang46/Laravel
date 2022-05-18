@@ -99,7 +99,7 @@
                                     </div>
 
                                     <div class="select-button">
-                                        <div><a href="#" class="primary-btn view-card">VIEW CARD</a></div>
+                                        <div><a href="{{url('/List-Carts')}}" class="primary-btn view-card">VIEW CARD</a></div>
                                         <div><a href="#" class="primary-btn checkout-btn">CHECK OUT</a>
                                         </div>
                                     </div>
