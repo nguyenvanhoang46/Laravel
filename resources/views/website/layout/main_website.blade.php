@@ -20,9 +20,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
             crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="{{asset('fontawesome-free-6.1.1-web.fontawesome-free-6.1.1-web/css/all.min.css')}}">
+{{--    <link rel="stylesheet" href="{{asset('fontawesome-free-6.1.1-web.fontawesome-free-6.1.1-web/css/all.min.css')}}">--}}
     <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="{{asset('css/glider.css')}}" />
+    <meta name="csrf-token" content="{{ csrf_token() }}" />
     @yield('styles')
 </head>
 <body>
@@ -46,10 +47,12 @@
 <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/semantic.min.css"/>
 <!-- Bootstrap theme -->
 <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/bootstrap.min.css"/>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+{{--<script src="https://code.jquery.com/jquery-3.6.0.min.js"--}}
+{{--        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>--}}
 <script src="{{asset('js/glider.js')}}"></script>
 <script src="{{asset('js/glider-compat.min.js')}}"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 @yield('scripts')
 
 

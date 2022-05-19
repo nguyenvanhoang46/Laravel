@@ -22,7 +22,7 @@
     font-weight: 700;
     border: none;
     color: #4c4c4c;
-    line-height: 40px;
+    line-height: 30px;
     float: left;
 }
 .qtybtn {
@@ -73,5 +73,33 @@
     font-size: 16px;
     text-align: center;
     line-height: 2.4em;
+}
+
+.continue-shopping {
+    margin-top: 6px;
+}
+.button-continue-shopping {
+    border: 2px solid currentColor;
+    color: #c89979;
+    padding: 7px 25px 7px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+}
+.button-continue-shopping:hover {
+    color: white;
+    background-color: #c89979;
+}
+.update-cart {
+    border: 2px solid currentColor;
+    color: #c89979;
+    padding: 8px 25px 4px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+}
+.update-cart:hover {
+    color: white;
+    background-color: #c89979;
 }
 

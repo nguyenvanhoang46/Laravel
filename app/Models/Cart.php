@@ -12,7 +12,6 @@ class Cart{
             $this->products = $cart->products;
             $this->totalPrice = $cart->totalPrice;
             $this->totalQuantity = $cart->totalQuantity;
-
         }
     }
 
@@ -34,5 +33,20 @@ class Cart{
         $this->totalQuantity -= $this->products[$id]['quantity']; // chính nó trừ đi số lượng loại bỏ
         $this->totalPrice -= $this->products[$id]['price'];      // giá hiện tại trừ đi giá loại bỏ
         unset($this->products[$id]);
+    }
+    public function UpdateItemCart($id, $quantity) {
+            // b1 trừ toàn bộ số tiền và số lượng của sản phẩm muốn cập nhật
+        $this->totalQuantity -= $this->products[$id]['quantity'];
+        $this->totalPrice -= $this->products[$id]['price'];
+
+        // đang cập nhật lại số lượng và giá
+        $this->products[$id]['quantity'] = $quantity;
+        $this->products[$id]['price'] = $quantity * $this->products[$id]['productInfo']->price;
+
+
+        // cập nhật lại giỏ hàng
+        $this->totalQuantity += $this->products[$id]['quantity'];
+        $this->totalPrice += $this->products[$id]['price'];
+
     }
 }

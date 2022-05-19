@@ -419,8 +419,7 @@
                                         <span class="heart-icon-cart mt-2">
                                             <i class=" far fa-heart"></i>
                                         </span>
-
-                                    <img src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-16.jpg" class="card-img-top image image" alt="...">
+                                    <img src="{{$product->image}}" alt="...">
                                     <div class="card-body">
                                         <div class="card-body-item ms-2">
                                             <h6 class="card-title ms-5 ten-item-column ">{{$product->name}}</h6>

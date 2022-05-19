@@ -50,6 +50,9 @@ Route::get('/website', [\App\Http\Controllers\WebsiteController::class, 'index']
 Route::get('/Add-Cart/{id}', [\App\Http\Controllers\WebsiteController::class, 'AddCart']);
 Route::get('/Delete-Item-Cart/{id}', [\App\Http\Controllers\WebsiteController::class, 'DeleteItemCart']);
 Route::get('/List-Carts', [\App\Http\Controllers\WebsiteController::class, 'ViewListCart']);
+Route::get('/Delete-Item-List-Cart/{id}', [\App\Http\Controllers\WebsiteController::class, 'DeleteListItemCart']);
+Route::get('/Save-Item-List-Cart/{id}/{quantity}', [\App\Http\Controllers\WebsiteController::class, 'SaveListItemCart']);
+Route::post('/Save-All', [\App\Http\Controllers\WebsiteController::class, 'SaveAllListItemCart']);
 
 
 
