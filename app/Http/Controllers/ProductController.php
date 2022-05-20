@@ -38,8 +38,16 @@ class ProductController extends Controller
     public function store(Request $request)
     {
         $input = $request->all();
+        if($request->hasFile('image')) {
+            $destination_path = 'public/images/products';
+            $image = $request->file('image');
+            $image_name =   $image->getClientOriginalName();
+            $path = $request->file('image')->storeAs($destination_path, $image_name);
+
+            $input['image'] = $image_name;
+        }
         Product::create($input);
-        return redirect('product')->with('flash_message', 'Product Addedd!');
+        return redirect('product');
     }
 
     /**

@@ -419,7 +419,7 @@
                                         <span class="heart-icon-cart mt-2">
                                             <i class=" far fa-heart"></i>
                                         </span>
-                                    <img src="{{$product->image}}" alt="...">
+                                    <img src="{{App\Models\Product::getImage($product)}}" alt="...">
                                     <div class="card-body">
                                         <div class="card-body-item ms-2">
                                             <h6 class="card-title ms-5 ten-item-column ">{{$product->name}}</h6>
@@ -427,16 +427,17 @@
                                                 <span class="span-price gia ms-4">{{number_format($product->price)}} <u>đ</u></span>
                                             </p>
                                             <button class="btn text-light ms-4 cart-slider add-to-cart add-to-cart">
-                                                <a class="addCart-item" onclick="AddCart({{$product->id}})" href="javascript:"> Thêm sản phẩm</a>
+                                                <a class="addCart-item" onclick="AddCart({{$product->id}})"
+                                                   href="javascript:"> Thêm sản phẩm</a>
                                             </button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    @endforeach
+                @endforeach
 
-                    <!-- rendenrProduct -->
+                <!-- rendenrProduct -->
 
                 </div>
             </div>
@@ -954,22 +955,24 @@
     <script>
         function AddCart(id) {
             $.ajax({
-                url: 'Add-Cart/'+id,
+                url: 'Add-Cart/' + id,
                 type: 'GET',
             }).done(function (response) {
                 RenderCart(response);
                 alertify.success('Đã thêm giỏ hàng thành công');
             });
         }
-        $("#change-item-cart").on("click", ".img-close" , function () {
+
+        $("#change-item-cart").on("click", ".img-close", function () {
             $.ajax({
-                url: 'Delete-Item-Cart/'+$(this).data("id"),
+                url: 'Delete-Item-Cart/' + $(this).data("id"),
                 type: 'GET',
             }).done(function (response) {
                 RenderCart(response);
                 alertify.success('Đã xoá sản phẩm thành công');
             });
         });
+
         function RenderCart(response) {
             $("#change-item-cart").empty();
             $("#change-item-cart").html(response);

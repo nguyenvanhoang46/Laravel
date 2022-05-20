@@ -154,7 +154,7 @@
                                             <h4 class="mb-4 ">Product</h4>
                                         </div>
                                         <div class="modal-body">
-                                            <form action="{{ url('product') }}" method="post" class="custom-validation">
+                                            <form action="{{ url('product') }}" method="post" class="custom-validation" enctype="multipart/form-data">
                                                 {!! csrf_field() !!}
                                                 <div class="form-group ">
                                                     <label class=" lable-product">Name</label>
@@ -178,7 +178,7 @@
                                                 <div class="form-group mt-4">
                                                     <label class="lable-product">URL</label>
                                                     <div>
-                                                        <input class="form-control input-product" name="image">
+                                                        <input type="file" class="form-control-file" id="exampleFormControlFile1" name="image">
                                                     </div>
                                                 </div>
                                                 <button class="btn mt-5 btn-primary add-product" type="submit">

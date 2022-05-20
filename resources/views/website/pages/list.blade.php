@@ -15,13 +15,7 @@
                                 <th class="produtcto">Số lượng</th>
                                 <th class="produtcto">Tổng</th>
                             </tr>
-                            <tr class="border-cart-item">
-                                <th></th>
-                                <th></th>
-                                <th class="produtcto"></th>
-                                <th class="produtcto"></th>
-                                <th class="produtcto"></th>
-                            </tr>
+
                             </thead>
                             <tbody>
                             @if(Session::has("Cart") != null)
@@ -38,13 +32,13 @@
                                         </td>
                                         <td class="qua-col">
                                             <div class="quantity">
-                                                <div class="ms-3 dec pro-qty ">
+                                                <div class="ms-5 dec pro-qty ">
                                                     <input data-id="{{$item['productInfo']->id}}" class="form-control" id="quantity-item{{$item['productInfo']->id}}" type="text " value="{{$item['quantity']}}">
                                                 </div>
                                             </div>
                                         </td>
                                         <td class="total-price first-row">{{number_format($item['price'])}} ₫</td>
-                                        <td class="close-td first-row"><i class="far fa-save" onclick="SaveListItemCart({{$item['productInfo']->id}});"></i></td>
+{{--                                        <td class="close-td first-row"><i class="far fa-save" onclick="SaveListItemCart({{$item['productInfo']->id}});"></i></td>--}}
                                         <td class="close-td first-row me-5"><i class="far fa-times-circle" onclick="DeleteListItemCart({{$item['productInfo']->id}});"></i></td>
                                     </tr>
                                 @endforeach

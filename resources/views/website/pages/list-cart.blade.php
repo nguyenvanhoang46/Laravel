@@ -24,7 +24,7 @@
                     </td>
                     <td class="qua-col">
                         <div class="quantity">
-                            <div class="ms-3 dec pro-qty ">
+                            <div class="ms-5 dec pro-qty ">
                                 <input data-id="{{$item['productInfo']->id}}" class="form-control" id="quantity-item{{$item['productInfo']->id}}" type="text" value="{{$item['quantity']}}">
                             </div>
                         </div>
