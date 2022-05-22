@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/welcome', function () {
     return view('welcome');
 });
 Route::prefix('admin')->group(function () {
@@ -46,6 +46,14 @@ Route::prefix('/')->group(function () {
         return view('website.pages.home_pages');
     });
 });
+
+Route::get('loginweb', function () {
+   return view('login.login');
+});
+Route::get('logout', function () {
+   return view('login.registration');
+});
+
 Route::get('/website', [\App\Http\Controllers\WebsiteController::class, 'index']);
 Route::get('/Add-Cart/{id}', [\App\Http\Controllers\WebsiteController::class, 'AddCart']);
 Route::get('/Delete-Item-Cart/{id}', [\App\Http\Controllers\WebsiteController::class, 'DeleteItemCart']);
@@ -56,4 +64,6 @@ Route::post('/Save-All', [\App\Http\Controllers\WebsiteController::class, 'SaveA
 
 
 
+Auth::routes();
 
+Route::get('/home', [App\Http\Controllers\WebsiteController::class, 'index']);

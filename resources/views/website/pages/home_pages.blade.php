@@ -1,6 +1,7 @@
 @extends('website.layout.main_website')
 
 @section('content')
+
     <div class="slider">
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
@@ -935,6 +936,7 @@
             </div>
         </div>
     </div>
+
 @endsection
 
 
