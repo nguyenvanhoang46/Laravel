@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserAuthController;
 
 /*
 |--------------------------------------------------------------------------
@@ -47,12 +48,12 @@ Route::prefix('/')->group(function () {
     });
 });
 
-Route::get('loginweb', function () {
-   return view('login.login');
-});
-Route::get('logout', function () {
-   return view('login.registration');
-});
+//Route::get('loginweb', function () {
+//   return view('login.login');
+//});
+//Route::get('logout', function () {
+//   return view('login.registration');
+//});
 
 Route::get('/website', [\App\Http\Controllers\WebsiteController::class, 'index']);
 Route::get('/Add-Cart/{id}', [\App\Http\Controllers\WebsiteController::class, 'AddCart']);
@@ -62,8 +63,13 @@ Route::get('/Delete-Item-List-Cart/{id}', [\App\Http\Controllers\WebsiteControll
 Route::get('/Save-Item-List-Cart/{id}/{quantity}', [\App\Http\Controllers\WebsiteController::class, 'SaveListItemCart']);
 Route::post('/Save-All', [\App\Http\Controllers\WebsiteController::class, 'SaveAllListItemCart']);
 
+Route::get('login', [UserAuthController::class, 'login']);
+Route::get('register', [UserAuthController::class, 'register']);
+Route::post('create', [UserAuthController::class, 'create'])->name('auth.create');
+Route::post('check', [UserAuthController::class, 'check'])->name('auth.check');
+Route::get('profile', [UserAuthController::class, 'profile']);
+Route::get('logout', [UserAuthController::class, 'logout']);
 
-
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\WebsiteController::class, 'index']);
+//Auth::routes();
+//
+//Route::get('/home', [App\Http\Controllers\WebsiteController::class, 'index']);

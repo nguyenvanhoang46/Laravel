@@ -413,30 +413,30 @@
                  aria-labelledby="pills-home-tab">
                 <div id="rendenrProduct"
                      class="row ms-1 large-columns-5 medium-columns-3 small-columns-2 row-normal">
-                    @foreach($products as $product)
-                        <div class="col ">
-                            <div class="mt-3 mb-4">
-                                <div class="card" style="width: 14rem; height: 390px;">
-                                        <span class="heart-icon-cart mt-2">
-                                            <i class=" far fa-heart"></i>
-                                        </span>
-                                    <img src="{{App\Models\Product::getImage($product)}}" alt="...">
-                                    <div class="card-body">
-                                        <div class="card-body-item ms-2">
-                                            <h6 class="card-title ms-5 ten-item-column ">{{$product->name}}</h6>
-                                            <p class="card-text ms-3">
-                                                <span class="span-price gia ms-4">{{number_format($product->price)}} <u>đ</u></span>
-                                            </p>
-                                            <button class="btn text-light ms-4 cart-slider add-to-cart add-to-cart">
-                                                <a class="addCart-item" onclick="AddCart({{$product->id}})"
-                                                   href="javascript:"> Thêm sản phẩm</a>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                @endforeach
+{{--                    @foreach($products as $product)--}}
+{{--                        <div class="col ">--}}
+{{--                            <div class="mt-3 mb-4">--}}
+{{--                                <div class="card" style="width: 14rem; height: 390px;">--}}
+{{--                                        <span class="heart-icon-cart mt-2">--}}
+{{--                                            <i class=" far fa-heart"></i>--}}
+{{--                                        </span>--}}
+{{--                                    <img src="{{App\Models\Product::getImage($product)}}" alt="...">--}}
+{{--                                    <div class="card-body">--}}
+{{--                                        <div class="card-body-item ms-2">--}}
+{{--                                            <h6 class="card-title ms-5 ten-item-column ">{{$product->name}}</h6>--}}
+{{--                                            <p class="card-text ms-3">--}}
+{{--                                                <span class="span-price gia ms-4">{{number_format($product->price)}} <u>đ</u></span>--}}
+{{--                                            </p>--}}
+{{--                                            <button class="btn text-light ms-4 cart-slider add-to-cart add-to-cart">--}}
+{{--                                                <a class="addCart-item" onclick="AddCart({{$product->id}})"--}}
+{{--                                                   href="javascript:"> Thêm sản phẩm</a>--}}
+{{--                                            </button>--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                @endforeach--}}
 
                 <!-- rendenrProduct -->
 
@@ -937,6 +937,13 @@
         </div>
     </div>
 
+    <div class="container">
+        <ul>
+            <li>{{ $LoggedUserInfo->name }}</li>
+            <li><a href="logout">Logout</a></li>
+
+        </ul>
+    </div>
 @endsection
 
 
