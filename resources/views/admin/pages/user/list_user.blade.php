@@ -135,8 +135,8 @@
                 <div class="col-12">
                     <div class="card mb-4">
                         <div class="bg-gradient-primary mt-n4 mx-3 shadow-primary border-radius-lg pt-4 pb-3" style="display: flex; justify-content: space-between;">
-                            <h6 class="text-white text-capitalize mt-2 ps-3">Product</h6>
-                            <h6 class="text-white add-product-item text-capitalize ps-3 me-5"> <button class="btn btn-primary"> <a href="{{ url('product/create') }}" class="text-white">Add Product</a> </button> </h6>
+                            <h6 class="text-white text-capitalize mt-2 ps-3">Users</h6>
+                            <h6 class="text-white add-product-item text-capitalize ps-3 me-5"> <button class="btn btn-primary"> <a href="{{ url('user/create') }}" class="text-white">Add User</a> </button> </h6>
                         </div>
                         <div class="card-body px-0 pt-0 pb-2">
                             <div class="table-responsive p-0">
@@ -144,25 +144,27 @@
                                     <thead>
                                     <tr class="">
                                         <th>ID</th>
-                                        <th>Image</th>
                                         <th>Name</th>
-                                        <th>Tag</th>
-                                        <th>Price</th>
+                                        <th>Email</th>
+                                        <th>Role</th>
+                                        <th>Password</th>
                                         <th>Actions</th>
                                     </tr>
                                     </thead>
                                     <tbody>
-                                    @foreach($products as $product)
+                                    @foreach($users as $users)
                                         <tr>
-                                            <td></td>
-                                            <td> " width= '70' height='70' class="img img-responsive"> </td>
-                                            <td></td>
-                                            <td></td>
-                                            <td>{</td>
-                                            <td>
-                                                <button class="btn btn-warning"> <a class="btn-warning" href="">Edit</a></button>
-                                                <form method="post" action="">
+                                            <td>{{ $users->id }}</td>
+                                            <td>{{ $users->name }}</td>
+                                            <td>{{ $users->email }}</td>
+                                            <td>{{ $users->role }}</td>
+                                            <td>{{ $users->password }}</td>
 
+                                            <td>
+                                                <button class="btn btn-warning"> <a class="btn-warning" href="{{url('/user/' . $user->id . '/edit')}}">Edit</a></button>
+                                                <form method="post" action="{{url('/user' .'/' .$user->id)}}">
+                                                    {{ method_field('DELETE') }}
+                                                    {{ csrf_field() }}
                                                     <button type="submit" class="btn btn-danger " title="Delete Student" onclick="return confirm(Confirm . delete)"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</button>
                                                 </form>
                                             </td>

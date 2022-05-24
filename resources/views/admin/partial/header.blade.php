@@ -17,7 +17,7 @@
                     <span class="nav-link-text ms-1">Dashboard</span>
                 </a>
             </li>
-            <li  class="nav-item {{ request()->is('product') ? 'active' : ''}}">
+            <li  class="nav-item ">
                 <a class="nav-link active" href="{{url('product')}}">
                     <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
                         <img src="/image/watch.png" alt="">
@@ -25,7 +25,7 @@
                     <span class="nav-link-text ms-1">Product</span>
                 </a>
             </li>
-            <li  class="nav-item {{ request()->is('category') ? 'active' : ''}}">
+            <li  class="nav-item">
                 <a class="nav-link " href="{{url('category')}}">
                     <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
                         <img src="/image/category.png" alt="">

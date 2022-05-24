@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class UserController extends Controller
@@ -13,7 +14,8 @@ class UserController extends Controller
      */
     public function index()
     {
-        //
+        $users = User::with('users')->get();
+        return view('admin.pages.user.list_user')->with('users', $users);
     }
 
     /**
@@ -23,7 +25,8 @@ class UserController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.pages.user.create');
+
     }
 
     /**
@@ -34,7 +37,13 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $input = $request->all();
+        User::create($input);
+        return redirect('user')->with('flash_message', 'User Addedd!');
+
+//        $input = $request->all();
+//        Category::create($input);
+//        return redirect('category')->with('flash_message', 'Category Addedd!');
     }
 
     /**
@@ -56,7 +65,8 @@ class UserController extends Controller
      */
     public function edit($id)
     {
-        //
+        $user = User::find($id);
+        return view('admin.pages.user.edit_user')->with('users', $user);
     }
 
     /**
@@ -68,7 +78,10 @@ class UserController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $user = User::find($id);
+        $input = $request->all();
+        $user->update($input);
+        return redirect('user')->with('flash_message', 'User Update');
     }
 
     /**
@@ -79,6 +92,7 @@ class UserController extends Controller
      */
     public function destroy($id)
     {
-        //
+        User::destroy($id);
+        return redirect('user')->with('flash_message', 'User deleted!');
     }
 }

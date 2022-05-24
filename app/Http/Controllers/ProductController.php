@@ -15,7 +15,6 @@ class ProductController extends Controller
     public function index()
     {
         $products = Product::with('category')->get();
-//        dd($products->toArray());
         return view ('admin.pages.product.show')->with('products', $products);
     }
 
@@ -28,6 +27,19 @@ class ProductController extends Controller
     {
         return view('admin.pages.product.create');
     }
+
+
+    public function search(Request $request) {
+        $search = $request['search'] ?? "";
+        if ($search != "") {
+            $products = Product::where('name', 'LIKE',  "$search%")->get();
+        }else {
+        $products = Product::all();
+        }
+        $data = compact('products', 'search');
+        return view('admin.pages.product.show')->with($data);
+    }
+
 
     /**
      * Store a newly created resource in storage.
