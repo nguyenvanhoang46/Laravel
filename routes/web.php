@@ -1,8 +1,6 @@
 <?php
 
-use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\UserAuthController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,26 +13,9 @@ use App\Http\Controllers\UserAuthController;
 |
 */
 
-Route::get('/welcome', function () {
+Route::get('/', function () {
     return view('welcome');
 });
-Route::prefix('admin')->group(function () {
-    Route::get('/', function () {
-        return view('admin.pages.dashboard');
-    });
-
-    Route::prefix('product')->group(function() {
-        Route::get('/', [ProductController::class, 'index']);
-    });
-
-
-});
-//Route::prefix('category')->group(function () {
-//    Route::get('/', function () {
-//        return view('admin.pages.category.list_category');
-//    });
-//});
-
 
 Route::resource("product", ProductController::class);
 
@@ -70,6 +51,8 @@ Route::post('check', [UserAuthController::class, 'check'])->name('auth.check');
 Route::get('profile', [UserAuthController::class, 'profile']);
 Route::get('logout', [UserAuthController::class, 'logout']);
 
-//Auth::routes();
-//
-//Route::get('/home', [App\Http\Controllers\WebsiteController::class, 'index']);
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth'])->name('dashboard');
+
+require __DIR__.'/auth.php';

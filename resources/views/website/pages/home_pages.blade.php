@@ -939,7 +939,6 @@
 
     <div class="container">
         <ul>
-            <li>{{ $LoggedUserInfo->name }}</li>
             <li><a href="logout">Logout</a></li>
 
         </ul>
