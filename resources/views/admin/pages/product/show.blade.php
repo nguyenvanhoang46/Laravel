@@ -138,9 +138,12 @@
                             <h6 class="text-white text-capitalize mt-2 ps-3">Product</h6>
                             <h6 class="text-white add-product-item text-capitalize ps-3 me-5"> <button class="btn btn-primary"> <a href="{{ url('product/create') }}" class="text-white">Add Product</a> </button> </h6>
                         </div>
-                        <form action="" class="mt-3 ms-5">
+                        <form action="" class="d-flex mt-3 ms-5">
                             <div class="form-group col-6">
-                                <input type="text" name="search" class="form-control" placeholder="Tim Kiem" value="{{$search}}">
+                                @if(isset($search))
+                                    <input type="text" name="search" class="form-control" placeholder="Tim Kiem" value="{{$search}}">
+                                @endif
+                                    <input type="text" name="search" class="form-control" placeholder="Tim Kiem" >
                             </div>
                             <button class="btn btn-primary">Search</button>
                         </form>

@@ -30,14 +30,14 @@ class ProductController extends Controller
 
 
     public function search(Request $request) {
-        $search = $request['search'] ?? "";
+        $search = $request->search ?: '';
         if ($search != "") {
             $products = Product::where('name', 'LIKE',  "$search%")->get();
         }else {
         $products = Product::all();
         }
         $data = compact('products', 'search');
-        return view('admin.pages.product.show')->with($data);
+        return view('admin.pages.product.show', $data);
     }
 
 
