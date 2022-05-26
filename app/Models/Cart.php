@@ -3,6 +3,9 @@
 namespace App\Models;
 
 class Cart{
+
+
+
     public $products = null;
     public $totalPrice = 0;
     public $totalQuantity = 0;

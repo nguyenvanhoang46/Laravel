@@ -80,7 +80,7 @@
                     @endif
 
                     <div class="wc-proceed-to-checkout">
-                        <a href="" class="mt-4 checkout-button button alt wc-forward">
+                        <a href="{{url('checkout')}}" class="mt-4 checkout-button button alt wc-forward">
                             TIẾN HÀNH THANH TOÁN
                         </a>
                     </div>

@@ -14,7 +14,7 @@
                     </div>
                 </td>
                 <td class="si-close">
-                    <img class="img-close mb-4" data-id="{{$item['productInfo']->id}}" src="./image/close.png" alt="">
+                    <img class="img-close mb-4" data-id="{{$item['productInfo']->id}}" src="" alt="">
                 </td>
             </tr>
         @endforeach
