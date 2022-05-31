@@ -46,7 +46,7 @@ Route::prefix('/')->group(function () {
 
 Route::middleware(['auth'])->group(function () {
     Route::get('checkout', [\App\Http\Controllers\CheckoutController::class, 'index']);
-    Route::post('place-order', [\App\Http\Controllers\CheckoutController::class, 'placeorder']);
+    Route::post('place-order', [\App\Http\Controllers\CheckoutController::class, 'checkout']);
 });
 
 Route::get('/website', [\App\Http\Controllers\WebsiteController::class, 'index']);

@@ -15,10 +15,10 @@ return new class extends Migration
     {
         Schema::create('order_items', function (Blueprint $table) {
             $table->id();
-            $table->string('order_id');
-            $table->string('prod_id');
-            $table->string('quantity');
-            $table->string('price');
+            $table->integer('quantity')->default(1);
+            $table->integer('total_price');
+            $table->foreignIdFor(\App\Models\Product::class)->constrained()->cascadeOnDelete();
+            $table->foreignIdFor(\App\Models\Order::class)->constrained()->cascadeOnDelete();
             $table->timestamps();
         });
     }

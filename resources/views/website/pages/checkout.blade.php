@@ -8,27 +8,30 @@
                 <div class="col-7">
                     <div class="row">
                         <div class="col-12">
-                            <label for="">Ten*</label>
-                            <input type="text" class="form-control" value="{{ Auth::user()->name }}" placeholder="Ten" name="fname" />
+                            <label for="">Tên*</label>
+                            <input type="text" class="form-control" value="{{ Auth()->user()->name }}"  placeholder="Tên" name="name" />
                         </div>
-
                     </div>
                     <div class="row mt-3">
                         <div class="col-12">
-                            <label for="">Dia Chi*</label>
-                            <input type="text" class="form-control" value="{{ Auth::user()->address }}" placeholder="Dia chi" name="address" />
+                            <label for="">Địa chỉ*</label>
+                            <input type="text" class="form-control"  placeholder="Địa chỉ" name="address" />
                         </div>
                         <div class="col-12 mt-3">
-                            <label for="">Tinh / Thanh pho*</label>
-                            <input type="text" class="form-control" value="{{ Auth::user()->city }}" name="city" />
+                            <label for="">Tỉnh/Thành phố*</label>
+                            <input type="text" class="form-control"  name="city" />
                         </div>
                         <div class="col-12 mt-3">
-                            <label for="">So dien thoai*</label>
-                            <input type="text" class="form-control" value="{{ Auth::user()->phone }}" name="phone" />
+                            <label for="">Số điện thoại*</label>
+                            <input type="text" class="form-control"  name="phone" />
                         </div>
                         <div class="col-12 mt-3">
-                            <label for="">Dia chi email*</label>
-                            <input type="text" class="form-control" value="{{ Auth::user()->email }}" name="email" />
+                            <label for="">Địa chỉ email*</label>
+                            <input type="text" class="form-control" value="{{ Auth()->user()->id }}"  name="email" />
+                        </div>
+                        <div class="col-12 mt-3">
+                            <label for="">Địa chỉ email*</label>
+                            <input type="text" class="form-control" value="{{ Auth()->user()->email }}"  name="email" />
                         </div>
                     </div>
                 </div>
@@ -68,5 +71,8 @@
 
 @section('scripts')
 
+    <script>
+
+    </script>
 
 @endsection

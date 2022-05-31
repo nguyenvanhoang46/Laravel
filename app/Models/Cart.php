@@ -4,7 +4,7 @@ namespace App\Models;
 
 class Cart{
 
-
+    protected $fillable = ['name', 'price', 'quantity'];
 
     public $products = null;
     public $totalPrice = 0;

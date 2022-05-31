@@ -53,7 +53,7 @@ class ProductController extends Controller
         if($request->hasFile('image')) {
             $destination_path = 'public/images/products';
             $image = $request->file('image');
-            $image_name =   $image->getClientOriginalName();
+            $image_name = $image->getClientOriginalName();
             $path = $request->file('image')->storeAs($destination_path, $image_name);
 
             $input['image'] = $image_name;

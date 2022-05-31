@@ -5,9 +5,11 @@ namespace App\Http\Controllers;
 use App\Models\Cart;
 use App\Models\Order;
 use App\Models\OrderItem;
+use App\Models\Product;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use MongoDB\Driver\Session;
 
 class CheckoutController extends Controller
 {
@@ -21,35 +23,30 @@ class CheckoutController extends Controller
         return  view('website.pages.checkout');
     }
 
-    public function placeorder(Request $request) {
-        $order = new Order();
-        $order->fname = $request->input('fname');
-        $order->address = $request->input('address');
-        $order->city = $request->input('city');
-        $order->phone = $request->input('phone');
-        $order->email = $request->input('email');
-        $order->save();
-
-        $oldCart = Session('Cart') ? Session('Cart') : '';
-        foreach ($oldCart as $item) {
-            OrderItem::create([
+    public function checkout(Request $request) {
+        $cart = auth()->user();
+        $order = Order::create([
+            'user_id' => auth()->id(),
+            'name' => $request->input('name'),
+            'phone' => $request->input('phone'),
+            'city' => $request->input('city'),
+            'address' => $request->input('address'),
+            'total_price' => $request->input('total_price'),
+        ]);
+        $orderItem = $cart->orderItem;
+        foreach ($orderItem as $orderItem) {
+            $order->orderItem()->create([
                 'order_id' => $order->id,
-                'prod_id' => $item->prod_id,
-                'quantity' => $item->prod_quantity,
-                'price' => $item->products->selling_price,
+                'product_id' => $orderItem->product_id,
+                'price' => $orderItem->price,
+                'quantity' => $orderItem->quantity,
             ]);
         }
-
-        if (Auth::user()->address == NULL) {
-            $user = User::where('id', Auth::id()->first());
-            $user->fname = $request->input('fname');
-            $user->address = $request->input('address');
-            $user->city = $request->input('city');
-            $user->phone = $request->input('phone');
-            $user->email = $request->input('email');
-            $user->update();
-        }
-
+        $cart->$orderItem()->detele();
+        $cart->quantity = 0;
+        $cart->total_price = 0;
+        $cart->save();
+        return redirect()-> route('website.pages.home_pages');
     }
 
     /**
@@ -59,7 +56,8 @@ class CheckoutController extends Controller
      */
     public function create()
     {
-        //
+        $products = Product::all();
+        return view('website.pages.checkout', compact('products'));
     }
 
     /**
@@ -70,7 +68,8 @@ class CheckoutController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
+
     }
 
     /**
