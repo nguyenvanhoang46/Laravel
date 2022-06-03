@@ -8,6 +8,9 @@
 .p-price{
     font-weight: bold;
 }
+.image-home-pages {
+    width: 100%!important;
+}
 .pro-qty {
     width: 123px;
     height: 46px;

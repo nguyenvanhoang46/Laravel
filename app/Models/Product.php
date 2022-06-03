@@ -20,6 +20,6 @@ class Product extends Model
 
     public static function getImage($product)
     {
-        return '/storage/images/products/' . $product->image;
+        return  $product->image;
     }
 }

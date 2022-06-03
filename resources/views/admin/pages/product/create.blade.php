@@ -166,6 +166,12 @@
                                                     <label class="lable-product">Tag</label>
                                                     <div>
                                                         <input class="form-control input-product" name="category_id">
+{{--                                                            <select name="province" id="province">--}}
+{{--                                                                <option value="0">a</option>--}}
+{{--                                                                @foreach($province as $province)--}}
+{{--                                                                <option value=" {{$province->name}} "> {{$province->name}} </option>--}}
+{{--                                                                @endforeach--}}
+{{--                                                            </select>--}}
                                                     </div>
                                                 </div>
                                                 <div class="form-group mt-4">
@@ -178,7 +184,8 @@
                                                 <div class="form-group mt-4">
                                                     <label class="lable-product">URL</label>
                                                     <div>
-                                                        <input type="file" class="form-control-file" id="exampleFormControlFile1" name="image">
+                                                        <input class="form-control" name="image" type="file" id="image">
+{{--                                                        <input type="file" class="form-control-file" id="exampleFormControlFile1" name="image">--}}
                                                     </div>
                                                 </div>
                                                 <button class="btn mt-5 btn-primary add-product" type="submit">

@@ -14,7 +14,7 @@ class UserController extends Controller
      */
     public function index()
     {
-        $users = User::with('users')->get();
+        $users = User::all();
         return view('admin.pages.user.list_user')->with('users', $users);
     }
 
@@ -37,13 +37,14 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        $input = $request->all();
-        User::create($input);
-        return redirect('user')->with('flash_message', 'User Addedd!');
-
-//        $input = $request->all();
-//        Category::create($input);
-//        return redirect('category')->with('flash_message', 'Category Addedd!');
+        $password = $request->input('password');
+        $user = User::create([
+            'name' => $request->input('name'),
+            'email' => $request->input('email'),
+            'role' => $request->input('role'),
+            'password' => $password
+        ]);
+        return redirect('user');
     }
 
     /**

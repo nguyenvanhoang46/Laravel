@@ -152,24 +152,26 @@
                                     </tr>
                                     </thead>
                                     <tbody>
-                                    @foreach($users as $users)
-                                        <tr>
-                                            <td>{{ $users->id }}</td>
-                                            <td>{{ $users->name }}</td>
-                                            <td>{{ $users->email }}</td>
-                                            <td>{{ $users->role }}</td>
-                                            <td>{{ $users->password }}</td>
+                                    @if ($users)
+                                        @foreach($users as $user)
+                                            <tr>
+                                                <td>{{ $user->id }}</td>
+                                                <td>{{ $user->name }}</td>
+                                                <td>{{ $user->email }}</td>
+                                                <td>{{ $user->role }}</td>
+                                                <td>{{ $user->password }}</td>
 
-                                            <td>
-                                                <button class="btn btn-warning"> <a class="btn-warning" href="{{url('/user/' . $user->id . '/edit')}}">Edit</a></button>
-                                                <form method="post" action="{{url('/user' .'/' .$user->id)}}">
-                                                    {{ method_field('DELETE') }}
-                                                    {{ csrf_field() }}
-                                                    <button type="submit" class="btn btn-danger " title="Delete Student" onclick="return confirm(Confirm . delete)"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</button>
-                                                </form>
-                                            </td>
-                                        </tr>
-                                    @endforeach
+                                                <td>
+                                                    <button class="btn btn-warning"> <a class="btn-warning" href="{{url('/user/' . $user->id . '/edit')}}">Edit</a></button>
+                                                    <form method="post" action="{{url('/user' .'/' .$user->id)}}">
+                                                        {{ method_field('DELETE') }}
+                                                        {{ csrf_field() }}
+                                                        <button type="submit" class="btn btn-danger " title="Delete Student" onclick="return confirm(Confirm . delete)"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</button>
+                                                    </form>
+                                                </td>
+                                            </tr>
+                                        @endforeach
+                                    @endif
                                     </tbody>
                                 </table>
                             </div>

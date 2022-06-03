@@ -152,6 +152,11 @@
                                     <div class="card mt-4">
                                         <div class="card-header p-3">
                                             <h4 class="mb-4 ">Product</h4>
+                                            @if(session('status'))
+                                                <div class="alert alert-primary" role="alert">
+                                                    {{ session('status') }}
+                                                </div>
+                                            @endif
                                         </div>
                                         <div class="modal-body">
                                             <form action="{{ url('user') }}" method="post" class="custom-validation">

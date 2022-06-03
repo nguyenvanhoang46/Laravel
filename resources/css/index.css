@@ -11,6 +11,9 @@
     padding-left: 5px !important;
     display: flex;
 }
+.image-home-pages {
+    width: 100% !important;
+}
 .logo {
     padding-left: 60px !important;
 }

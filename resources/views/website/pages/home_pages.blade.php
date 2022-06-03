@@ -1,6 +1,10 @@
 @extends('website.layout.main_website')
 
+
+
 @section('content')
+
+
 
     <div class="slider">
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
@@ -421,7 +425,8 @@
                                         <span class="heart-icon-cart mt-2">
                                             <i class=" far fa-heart"></i>
                                         </span>
-                                        <img src="{{App\Models\Product::getImage($product)}}" alt="...">
+                                        <img class="card-img-top  " src="{{App\Models\Product::getImage($product)}}" alt="...">
+{{--                                        <img class="image-home-pages" src="{{ $product->image }}" alt="...">--}}
                                         <div class="card-body">
                                             <div class="card-body-item ms-2">
                                                 <h6 class="card-title ms-5 ten-item-column ">{{$product->name}}</h6>
@@ -939,12 +944,7 @@
         </div>
     </div>
 
-    <div class="container">
-        <ul>
-            <li><a href="logout">Logout</a></li>
 
-        </ul>
-    </div>
 @endsection
 
 

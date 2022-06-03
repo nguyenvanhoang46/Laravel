@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\Product;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 
 class ProductController extends Controller
 {
@@ -14,10 +16,18 @@ class ProductController extends Controller
      */
     public function index()
     {
+//        $province = DB::table('category_id')->get();
         $products = Product::with('category')->get();
         return view ('admin.pages.product.show')->with('products', $products);
     }
 
+
+    public function select()
+    {
+        $province = DB::table('categorys')->get();
+//        $products = Product::with('category')->get();
+        return view ('admin.pages.product.show')->with('$province', $province);
+    }
     /**
      * Show the form for creating a new resource.
      *
@@ -50,14 +60,18 @@ class ProductController extends Controller
     public function store(Request $request)
     {
         $input = $request->all();
-        if($request->hasFile('image')) {
-            $destination_path = 'public/images/products';
-            $image = $request->file('image');
-            $image_name = $image->getClientOriginalName();
-            $path = $request->file('image')->storeAs($destination_path, $image_name);
-
-            $input['image'] = $image_name;
-        }
+        $requestDate = $request->all();
+//        if($request->hasFile('image')) {
+//            $destination_path = 'public/images/products';
+//            $image = $request->file('image');
+//            $image_name = $image->getClientOriginalName();
+//            $path = $request->file('image')->storeAs($destination_path, $image_name);
+//
+//            $input['image'] = $image_name;
+//        }
+        $filename = time().$request->file('image')->getClientOriginalExtension();
+        $path = $request->file('image')->storeAs('image', $filename, 'public');
+        $requestDate["image"] = '/storage/'.$path; Product::create($requestDate);
         Product::create($input);
         return redirect('product');
     }

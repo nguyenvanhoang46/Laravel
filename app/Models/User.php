@@ -20,6 +20,7 @@ class User extends Authenticatable
     protected $fillable = [
         'name',
         'email',
+        'role',
         'password',
     ];
 
@@ -42,8 +43,9 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-    public function orders()
+    static public function isAdmin(User $user)
     {
-        return $this->hasMany(Order::class);
+        return $user->role == 'admin';
     }
+
 }

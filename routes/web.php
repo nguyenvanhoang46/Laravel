@@ -12,16 +12,21 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::group([], static function() {
+    Route::group(['as' => 'admin.', 'middleware' => 'admin.only'], static function() {
+        Route::resource("/product", \App\Http\Controllers\ProductController::class);
+
+        Route::resource("/category", \App\Http\Controllers\CategoryController::class);
+
+        Route::resource('/user', \App\Http\Controllers\UserController::class);
+    });
+});
 
 Route::get('/', function () {
     return view('welcome');
 });
 
-Route::resource("product", \App\Http\Controllers\ProductController::class);
 
-Route::resource("category", \App\Http\Controllers\CategoryController::class);
-
-Route::resource('user', \App\Http\Controllers\UserController::class);
 
 Route::get('getuser', [\App\Http\Controllers\UserController::class, 'index']);
 
@@ -44,10 +49,10 @@ Route::prefix('/')->group(function () {
 //   return view('login.registration');
 //});
 
-Route::middleware(['auth'])->group(function () {
-    Route::get('checkout', [\App\Http\Controllers\CheckoutController::class, 'index']);
-    Route::post('place-order', [\App\Http\Controllers\CheckoutController::class, 'checkout']);
-});
+//Route::middleware(['auth'])->group(function () {
+//    Route::get('checkout', [\App\Http\Controllers\CheckoutController::class, 'index'])->middleware('checklogin');
+//    Route::post('place-order', [\App\Http\Controllers\CheckoutController::class, 'checkout']);
+//});
 
 Route::get('/website', [\App\Http\Controllers\WebsiteController::class, 'index']);
 Route::get('/Add-Cart/{id}', [\App\Http\Controllers\WebsiteController::class, 'AddCart']);
@@ -60,6 +65,7 @@ Route::post('/Save-All', [\App\Http\Controllers\WebsiteController::class, 'SaveA
 Route::get('/detail/{id}', [\App\Http\Controllers\DetailsController::class, 'details']);
 Route::get('/search', [\App\Http\Controllers\ProductController::class, 'search']);
 
+
 //Route::get('login', [\App\Http\Controllers\UserAuthController::class, 'login']);
 //Route::get('register', [\App\Http\Controllers\UserAuthController::class, 'register']);
 //Route::post('create', [\App\Http\Controllers\UserAuthController::class, 'create'])->name('auth.create');
@@ -71,4 +77,4 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';

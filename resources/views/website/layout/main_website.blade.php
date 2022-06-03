@@ -31,6 +31,7 @@
     <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="{{asset('css/glider.css')}}" />
     <meta name="csrf-token" content="{{ csrf_token() }}" />
+
     @yield('styles')
 </head>
 <body>

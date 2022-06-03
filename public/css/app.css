@@ -715,14 +715,14 @@ select {
 .-mt-px {
   margin-top: -1px;
 }
+.mt-5 {
+  margin-top: 1.25rem;
+}
 .mt-3 {
   margin-top: 0.75rem;
 }
 .mb-5 {
   margin-bottom: 1.25rem;
-}
-.mt-5 {
-  margin-top: 1.25rem;
 }
 .mb-3 {
   margin-bottom: 0.75rem;
@@ -805,11 +805,11 @@ select {
 .w-auto {
   width: auto;
 }
-.w-20 {
-  width: 5rem;
-}
 .w-full {
   width: 100%;
+}
+.w-20 {
+  width: 5rem;
 }
 .w-48 {
   width: 12rem;
