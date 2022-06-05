@@ -60,7 +60,7 @@ class ProductController extends Controller
     public function store(Request $request)
     {
         $input = $request->all();
-        $requestDate = $request->all();
+//        $requestDate = $request->all();
 //        if($request->hasFile('image')) {
 //            $destination_path = 'public/images/products';
 //            $image = $request->file('image');
@@ -71,7 +71,7 @@ class ProductController extends Controller
 //        }
         $filename = time().$request->file('image')->getClientOriginalExtension();
         $path = $request->file('image')->storeAs('image', $filename, 'public');
-        $requestDate["image"] = '/storage/'.$path; Product::create($requestDate);
+        $input["image"] = '/storage/'.$path;
         Product::create($input);
         return redirect('product');
     }

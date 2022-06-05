@@ -49,10 +49,12 @@ Route::prefix('/')->group(function () {
 //   return view('login.registration');
 //});
 
-//Route::middleware(['auth'])->group(function () {
-//    Route::get('checkout', [\App\Http\Controllers\CheckoutController::class, 'index'])->middleware('checklogin');
-//    Route::post('place-order', [\App\Http\Controllers\CheckoutController::class, 'checkout']);
-//});
+Route::middleware(['auth'])->group(function () {
+    Route::get('checkout', [\App\Http\Controllers\CheckoutController::class, 'index']);
+    Route::post('place-order', [\App\Http\Controllers\CheckoutController::class, 'checkout']);
+});
+Route::get('checkout', [\App\Http\Controllers\CheckoutController::class, 'index']);
+Route::post('place-order', [\App\Http\Controllers\CheckoutController::class, 'checkout']);
 
 Route::get('/website', [\App\Http\Controllers\WebsiteController::class, 'index']);
 Route::get('/Add-Cart/{id}', [\App\Http\Controllers\WebsiteController::class, 'AddCart']);

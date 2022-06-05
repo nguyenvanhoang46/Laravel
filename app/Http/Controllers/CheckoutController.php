@@ -23,31 +23,31 @@ class CheckoutController extends Controller
         return  view('website.pages.checkout');
     }
 
-    public function checkout(Request $request) {
-        $cart = auth()->user();
-        $order = Order::create([
-            'user_id' => auth()->id(),
-            'name' => $request->input('name'),
-            'phone' => $request->input('phone'),
-            'city' => $request->input('city'),
-            'address' => $request->input('address'),
-            'total_price' => $request->input('total_price'),
-        ]);
-        $orderItem = $cart->orderItem;
-        foreach ($orderItem as $orderItem) {
-            $order->orderItem()->create([
-                'order_id' => $order->id,
-                'product_id' => $orderItem->product_id,
-                'price' => $orderItem->price,
-                'quantity' => $orderItem->quantity,
-            ]);
-        }
-        $cart->$orderItem()->detele();
-        $cart->quantity = 0;
-        $cart->total_price = 0;
-        $cart->save();
-        return redirect()-> route('website.pages.home_pages');
-    }
+//    public function checkout(Request $request) {
+//        $cart = auth()->user();
+//        $order = Order::create([
+//            'user_id' => auth()->id(),
+//            'name' => $request->input('name'),
+//            'phone' => $request->input('phone'),
+//            'city' => $request->input('city'),
+//            'address' => $request->input('address'),
+//            'total_price' => $request->input('total_price'),
+//        ]);
+//        $orderItem = $cart->orderItem;
+//        foreach ($orderItem as $orderItem) {
+//            $order->orderItem()->create([
+//                'order_id' => $order->id,
+//                'product_id' => $orderItem->product_id,
+//                'price' => $orderItem->price,
+//                'quantity' => $orderItem->quantity,
+//            ]);
+//        }
+//        $cart->$orderItem()->detele();
+//        $cart->quantity = 0;
+//        $cart->total_price = 0;
+//        $cart->save();
+//        return redirect()-> route('website.pages.home_pages');
+//    }
 
     /**
      * Show the form for creating a new resource.
