@@ -141,11 +141,11 @@
                         <form action="" class="d-flex mt-3 ms-5">
                             <div class="form-group col-6">
                                 @if(isset($search))
-                                    <input type="text" name="search" class="form-control" placeholder="Tim Kiem" value="{{$search}}">
+                                    <input  type="search" name="search" class="search-product form-control" placeholder="Tim Kiem" value="{{$search}}">
                                 @endif
-                                    <input type="text" name="search" class="form-control" placeholder="Tim Kiem" >
+                                    <input  type="text" name="search" class="search-product form-control" placeholder="Tim Kiem" >
                             </div>
-                            <button class="btn btn-primary">Search</button>
+                            <button type="submit" class="btn btn-primary">Search</button>
                         </form>
                         <div class="card-body px-0 pt-0 pb-2">
                             <div class="table-responsive p-0">
@@ -162,7 +162,7 @@
                                     </thead>
                                     <tbody>
                                     @foreach($products as $product)
-                                        <tr>
+                                        <tr data-product="{{ $product }}" class="product-item">
                                             <td>{{ $product->id }}</td>
                                             <td> <img src="{{ asset($product->image) }}" width= '70' height='70' class="img img-responsive"> </td>
                                             <td>{{ $product->name }}</td>
@@ -187,4 +187,23 @@
             </div>
         </div>
     </main>
+@endsection
+
+@section('scripts')
+    <script>
+        $('.search-product').on('keyup', function(e) {
+            const keyword = e.target.value;
+            const listItem = Array.from($('.product-item'));
+
+            listItem.forEach((item) => {
+                const name = JSON.parse($(item).attr('data-product')).name;
+                if (!name.toLowerCase().includes(keyword.toLowerCase())) {
+                    $(item).hide()
+                } else {
+                    $(item).show()
+                }
+            })
+
+        })
+    </script>
 @endsection

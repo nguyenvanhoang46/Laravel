@@ -29,6 +29,10 @@ class UserController extends Controller
 
     }
 
+    public function searchUser(Request $request) {
+
+    }
+
     /**
      * Store a newly created resource in storage.
      *

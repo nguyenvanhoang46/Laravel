@@ -40,7 +40,7 @@ class ProductController extends Controller
 
 
     public function search(Request $request) {
-        $search = $request->search ?: '';
+        $search = $request['search'] ?: '';
         if ($search != "") {
             $products = Product::where('name', 'LIKE',  "$search%")->get();
         }else {
@@ -60,15 +60,6 @@ class ProductController extends Controller
     public function store(Request $request)
     {
         $input = $request->all();
-//        $requestDate = $request->all();
-//        if($request->hasFile('image')) {
-//            $destination_path = 'public/images/products';
-//            $image = $request->file('image');
-//            $image_name = $image->getClientOriginalName();
-//            $path = $request->file('image')->storeAs($destination_path, $image_name);
-//
-//            $input['image'] = $image_name;
-//        }
         $filename = time().$request->file('image')->getClientOriginalExtension();
         $path = $request->file('image')->storeAs('image', $filename, 'public');
         $input["image"] = '/storage/'.$path;

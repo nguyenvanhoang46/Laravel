@@ -1,4 +1,4 @@
-@if(Session::has("Cart") != null)
+ @if(Session::has("Cart") != null)
 <div class="select-items">
     <table class="">
         <tbody>

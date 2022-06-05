@@ -55,7 +55,7 @@ Route::middleware(['auth'])->group(function () {
 });
 Route::get('checkout', [\App\Http\Controllers\CheckoutController::class, 'index']);
 Route::post('place-order', [\App\Http\Controllers\CheckoutController::class, 'checkout']);
-
+Route::get('search', [\App\Http\Controllers\ProductController::class, 'search']);
 Route::get('/website', [\App\Http\Controllers\WebsiteController::class, 'index']);
 Route::get('/Add-Cart/{id}', [\App\Http\Controllers\WebsiteController::class, 'AddCart']);
 Route::get('/Delete-Item-Cart/{id}', [\App\Http\Controllers\WebsiteController::class, 'DeleteItemCart']);
