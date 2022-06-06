@@ -21,19 +21,20 @@
                 <div class="ms-2 row-top text-light">
                     <ul class=" navbar-nav ms-auto">
                         <!-- Authentication Links -->
-                        @guest
-                            @if (Route::has('login'))
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('login') }}">{{ __('Đăng Nhập') }}</a>
-                                </li>
-                            @endif
-
-                            @if (Route::has('register'))
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Đăng Ký') }}</a>
-                                </li>
-                            @endif
-                        @else
+                        <div class="d-flex">
+                            @guest
+                                @if (Route::has('login'))
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{{ route('login') }}">{{ __('Đăng Nhập') }}</a>
+                                    </li>
+                                @endif
+                                @if (Route::has('register'))
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{{ route('register') }}">{{ __('Đăng Ký') }}</a>
+                                    </li>
+                                @endif
+                            @else
+                        </div>
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }}
@@ -64,7 +65,7 @@
         <div class="row">
             <div class="col">
                 <div class="logo">
-                    <a href="./Index.html">
+                    <a href="{{ url('website') }}">
                         <img height="70"
                              src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/logo-mona-2.png"
                              alt="">
