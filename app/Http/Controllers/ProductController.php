@@ -6,6 +6,7 @@ use App\Models\Product;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
+use App\Models\Category;
 
 class ProductController extends Controller
 {
@@ -16,17 +17,17 @@ class ProductController extends Controller
      */
     public function index()
     {
-//        $province = DB::table('category_id')->get();
+        //        $province = DB::table('category_id')->get();
         $products = Product::with('category')->get();
-        return view ('admin.pages.product.show')->with('products', $products);
+        return view('admin.pages.product.show')->with('products', $products);
     }
 
 
     public function select()
     {
         $province = DB::table('categorys')->get();
-//        $products = Product::with('category')->get();
-        return view ('admin.pages.product.show')->with('$province', $province);
+        //        $products = Product::with('category')->get();
+        return view('admin.pages.product.show')->with('$province', $province);
     }
     /**
      * Show the form for creating a new resource.
@@ -35,16 +36,19 @@ class ProductController extends Controller
      */
     public function create()
     {
-        return view('admin.pages.product.create');
+        $category = Category::all();
+
+        return view('admin.pages.product.create')->with('category', $category);
     }
 
 
-    public function search(Request $request) {
+    public function search(Request $request)
+    {
         $search = $request['search'] ?: '';
         if ($search != "") {
             $products = Product::where('name', 'LIKE',  "$search%")->get();
-        }else {
-        $products = Product::all();
+        } else {
+            $products = Product::all();
         }
         $data = compact('products', 'search');
         return view('admin.pages.product.show', $data);
@@ -60,9 +64,9 @@ class ProductController extends Controller
     public function store(Request $request)
     {
         $input = $request->all();
-        $filename = time().$request->file('image')->getClientOriginalExtension();
+        $filename = time() . $request->file('image')->getClientOriginalExtension();
         $path = $request->file('image')->storeAs('image', $filename, 'public');
-        $input["image"] = '/storage/'.$path;
+        $input["image"] = '/storage/' . $path;
         Product::create($input);
         return redirect('product');
     }
@@ -86,8 +90,11 @@ class ProductController extends Controller
      */
     public function edit($id)
     {
+        $category = Category::all();
+
+
         $product = Product::find($id);
-        return view('admin.pages.product.edit')->with('products', $product);
+        return view('admin.pages.product.edit')->with('products', $product)->with('category', $category);;
     }
 
     /**
