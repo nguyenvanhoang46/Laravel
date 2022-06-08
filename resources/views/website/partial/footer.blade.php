@@ -1,3 +1,19 @@
+<div class="container mt-5">
+    <div class="row align-middle row-email">
+        <div class="row-email-item">
+            <div class="col-5 col-left medium-6 small-12 large-6">
+                <h4 class="form-information">ĐĂNG KÝ NHẬN THÔNG TIN</h4>
+            </div>
+            <di class="col-2"></di>
+            <div class="col-5 ps-5  col-left medium-6 small-12 large-6">
+                <form action="" class="ms-3">
+                    <input type="text" placeholder="  Email ..." class="form-gmail">
+                    <input type="submit" value="ĐĂNG KÝ" class="form_dang_ky" id="btn-gui">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 <div class="sec_footer mt-5">
     <div class="container">
         <div class="row m">

@@ -17,4 +17,6 @@ mix.js('resources/js/app.js', 'public/js').
     require('tailwindcss'),
     require('autoprefixer'),
 ])
-    .css("resources/css/product_detail.css", "public/css");
+    .css("resources/css/product_detail.css", "public/css")
+    .css("resources/css/product_pages.css", "public/css")
+    .css("resources/css/introduce_product.css", "public/css");

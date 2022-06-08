@@ -11,7 +11,7 @@
 @section('content')
     <div class="container mt-5">
         <h5>THÔNG TIN THANH TOÁN</h5>
-        <form action="{{ url('place-order') }}" method="post">
+        <form action="{{ url('website') }}" method="post">
             {{ csrf_field() }}
             <div class="row">
                 <div class="col-7">

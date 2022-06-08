@@ -22,10 +22,16 @@ Route::group([], static function() {
     });
 });
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/website', function () {
+    return view('website.pagas.home_pages');
 });
 
+Route::get('introduceproduct', function () {
+   return view('website.pages.introduce_product');
+});
+Route::get('blogproduct', function () {
+    return view('website.pages.blog_product');
+});
 
 
 Route::get('getuser', [\App\Http\Controllers\UserController::class, 'index']);
@@ -36,11 +42,12 @@ Route::prefix('productdetail')->group(function () {
     });
 });
 
-Route::prefix('/')->group(function () {
-    Route::get('/', function () {
-        return view('website.pages.home_pages');
-    });
-});
+//Route::prefix('/')->group(function () {
+//    Route::get('/', function () {
+//        return view('website.pages.home_pages');
+//    });
+//});
+Route::get('/', [\App\Http\Controllers\WebsiteController::class, 'index']);
 
 //Route::get('loginweb', function () {
 //   return view('login.login');
@@ -57,6 +64,7 @@ Route::get('checkout', [\App\Http\Controllers\CheckoutController::class, 'index'
 Route::post('place-order', [\App\Http\Controllers\CheckoutController::class, 'checkout']);
 Route::get('search', [\App\Http\Controllers\ProductController::class, 'search']);
 Route::get('/website', [\App\Http\Controllers\WebsiteController::class, 'index']);
+Route::get('/product_pages', [\App\Http\Controllers\WebsiteController::class, 'product_pages']);
 Route::get('/Add-Cart/{id}', [\App\Http\Controllers\WebsiteController::class, 'AddCart']);
 Route::get('/Delete-Item-Cart/{id}', [\App\Http\Controllers\WebsiteController::class, 'DeleteItemCart']);
 Route::get('/List-Carts', [\App\Http\Controllers\WebsiteController::class, 'ViewListCart']);

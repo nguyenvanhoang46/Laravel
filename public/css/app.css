@@ -742,6 +742,9 @@ select {
 .mt-0 {
   margin-top: 0px;
 }
+.mb-20 {
+  margin-bottom: 5rem;
+}
 .mt-1 {
   margin-top: 0.25rem;
 }
@@ -751,8 +754,8 @@ select {
 .-mr-2 {
   margin-right: -0.5rem;
 }
-.mb-20 {
-  margin-bottom: 5rem;
+.mr-5 {
+  margin-right: 1.25rem;
 }
 .block {
   display: block;
@@ -834,6 +837,9 @@ select {
 }
 .shrink-0 {
   flex-shrink: 0;
+}
+.flex-grow {
+  flex-grow: 1;
 }
 .origin-top-left {
   transform-origin: top left;
@@ -1128,6 +1134,9 @@ select {
 }
 .uppercase {
   text-transform: uppercase;
+}
+.italic {
+  font-style: italic;
 }
 .leading-5 {
   line-height: 1.25rem;

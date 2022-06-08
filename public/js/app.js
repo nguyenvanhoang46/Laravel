@@ -22353,6 +22353,32 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/css/product_pages.css":
+/*!*****************************************!*\
+  !*** ./resources/css/product_pages.css ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./resources/css/introduce_product.css":
+/*!*********************************************!*\
+  !*** ./resources/css/introduce_product.css ***!
+  \*********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
 /***/ "./node_modules/process/browser.js":
 /*!*****************************************!*\
   !*** ./node_modules/process/browser.js ***!
@@ -22670,6 +22696,8 @@ process.umask = function() { return 0; };
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
 /******/ 			"/js/app": 0,
+/******/ 			"css/introduce_product": 0,
+/******/ 			"css/product_pages": 0,
 /******/ 			"css/product_detail": 0,
 /******/ 			"css/app": 0
 /******/ 		};
@@ -22721,9 +22749,11 @@ process.umask = function() { return 0; };
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["css/product_detail","css/app"], () => (__webpack_require__("./resources/js/app.js")))
-/******/ 	__webpack_require__.O(undefined, ["css/product_detail","css/app"], () => (__webpack_require__("./resources/css/app.css")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/product_detail","css/app"], () => (__webpack_require__("./resources/css/product_detail.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/introduce_product","css/product_pages","css/product_detail","css/app"], () => (__webpack_require__("./resources/js/app.js")))
+/******/ 	__webpack_require__.O(undefined, ["css/introduce_product","css/product_pages","css/product_detail","css/app"], () => (__webpack_require__("./resources/css/app.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/introduce_product","css/product_pages","css/product_detail","css/app"], () => (__webpack_require__("./resources/css/product_detail.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/introduce_product","css/product_pages","css/product_detail","css/app"], () => (__webpack_require__("./resources/css/product_pages.css")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/introduce_product","css/product_pages","css/product_detail","css/app"], () => (__webpack_require__("./resources/css/introduce_product.css")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()

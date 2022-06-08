@@ -13,6 +13,10 @@ class WebsiteController extends Controller
         $products = DB::table('products')->get();
         return view('website.pages.home_pages', compact('products'));
     }
+    public function product_pages() {
+        $products = DB::table('products')->get();
+        return view('website.pages.product_pages', compact('products'));
+    }
 
     public function AddCart(Request $request ,$id) {
 

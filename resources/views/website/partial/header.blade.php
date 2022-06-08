@@ -161,19 +161,19 @@
     <div class="container mt-3 pb-3">
         <ul class="nav nav-bar justify-content-center">
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./Index.html">TRANG CHỦ</a>
+                <a class="nav-link active" aria-current="page" href="{{ url('website') }}">TRANG CHỦ</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="./introducepage.html">GIỚI THIỆU</a>
+                <a class="nav-link" href="{{ url('introduceproduct') }}">GIỚI THIỆU</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">ĐÔNG HỒ NAM</a>
+                <a class="nav-link" href="{{ url('product_pages') }}">ĐÔNG HỒ NAM</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">ĐÔNG HỒ NỮ</a>
+                <a class="nav-link" href="{{ url('product_pages') }}">ĐÔNG HỒ NỮ</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="./blog.html">BLOG</a>
+                <a class="nav-link" href="{{ url('blogproduct') }}">BLOG</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">LIÊN HỆ</a>

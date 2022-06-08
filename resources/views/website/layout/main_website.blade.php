@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="{{ asset('css/style.css')}}">
     <link rel="stylesheet" href="{{ asset('css/cart.css')}}">
     <link rel="stylesheet" href="{{ asset('css/product_detail.css')}}">
+    <link rel="stylesheet" href="{{ asset('css/product_pages.css')}}">
+    <link rel="stylesheet" href="{{ asset('css/introduce_product.css')}}">
     <link rel="stylesheet" type="text/css"
           href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
