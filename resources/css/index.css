@@ -11,6 +11,9 @@
     padding-left: 5px !important;
     display: flex;
 }
+.card-title {
+    text-decoration: none;
+}
 .image-home-pages {
     width: 100% !important;
 }

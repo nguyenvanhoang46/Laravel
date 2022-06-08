@@ -353,8 +353,6 @@
                                 <span class="span-price gia">500,000 <u>đ</u></span>
                             </p>
                             <button class="btn text-light ms-3 cart-slider add-to-cart ">Thêm vào giỏ</button>
-
-
                         </div>
                     </div>
                 </div>
@@ -426,15 +424,15 @@
                                         <span class="heart-icon-cart mt-2">
                                             <i class=" far fa-heart"></i>
                                         </span>
-                                            <img class="card-img-top  " src="{{App\Models\Product::getImage($product)}}" alt="...">
+                                            <img class="card-img-top" src="{{App\Models\Product::getImage($product)}}" alt="...">
                                             {{--                                        <img class="image-home-pages" src="{{ $product->image }}" alt="...">--}}
                                             <div class="card-body">
                                                 <div class="card-body-item ms-2">
-                                                    <h6 class="card-title ms-5 ten-item-column ">{{$product->name}}</h6>
+                                                    <h6 class="card-title text-dark  ms-5 ten-item-column ">{{$product->name}}</h6>
                                                     <p class="card-text ms-3">
-                                                        <span class="span-price gia ms-4">{{number_format($product->price)}} <u>đ</u></span>
+                                                        <span class="span-price gia text-decoration-none ms-4">{{number_format($product->price)}} <u>đ</u></span>
                                                     </p>
-                                                    <button class="btn text-light ms-4 cart-slider add-to-cart add-to-cart">
+                                                    <button class="btn mt-2 text-light ms-4 cart-slider add-to-cart add-to-cart">
                                                         <a class="addCart-item" onclick="AddCart({{$product->id}})"
                                                            href="javascript:"> Thêm sản phẩm</a>
                                                     </button>

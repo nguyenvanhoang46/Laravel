@@ -1,4 +1,10 @@
 @extends('website.layout.main_website')
+<style>
+    .image-item-detail {
+        width: 55%!important;
+        margin-left: 120px;
+    }
+</style>
 @section('content')
     <div class="onk">
         <div class="container">
@@ -6,47 +12,9 @@
                 <div class="col-md-6">
                     <div id="slider" class="owl-carousel product-slider">
                         <div class="item">
-                            <img src="{{$product->image}}" />
+                            <img class="image-item-detail" src="{{$product->image}}" />
                         </div>
-{{--                        <div class="item">--}}
-{{--                            <img--}}
-{{--                                src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-03.png" />--}}
-{{--                        </div>--}}
-{{--                        <div class="item">--}}
-{{--                            <img--}}
-{{--                                src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-04.png" />--}}
-{{--                        </div>--}}
-{{--                        <div class="item">--}}
-{{--                            <img--}}
-{{--                                src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-05.png" />--}}
-{{--                        </div>--}}
-{{--                        <div class="item">--}}
-{{--                            <img--}}
-{{--                                src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-01.png" />--}}
-{{--                        </div>--}}
                     </div>
-{{--                   <div id="thumb" class="owl-carousel product-thumb">--}}
-{{--                        <div class="item">--}}
-{{--                            <img--}}
-{{--                                src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-02-300x300.png" />--}}
-{{--                        </div>--}}
-{{--                        <div class="item">--}}
-{{--                            <img--}}
-{{--                                src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-03-300x300.png" />--}}
-{{--                        </div>--}}
-{{--                        <div class="item">--}}
-{{--                            <img--}}
-{{--                                src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-04-300x300.png" />--}}
-{{--                        </div>--}}
-{{--                        <div class="item">--}}
-{{--                            <img--}}
-{{--                                src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-05-300x300.png" />--}}
-{{--                        </div>--}}
-{{--                        <div class="item">--}}
-{{--                            <img--}}
-{{--                                src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/product-01-300x300.png" />--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
                 </div>
                 <div class="col-md-6 mt-5">
                     <div class="product-dtl">
@@ -77,7 +45,7 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <label for="size">Chọn chất liệu dây</label>
-                                <select id="size" name="size" class="form-control">
+                                <select id="size" name="size" class="form-control mt-3">
                                     <option>Dây da</option>
                                     <option>Dây kim loại</option>
                                     <option>Dây vải Nato</option>
@@ -86,7 +54,7 @@
                             </div>
                             <div class="col-md-6">
                                 <label for="color">Color</label>
-                                <select id="color" name="color" class="form-control">
+                                <select id="color" name="color" class="form-control mt-3">
                                     <option>Blue</option>
                                     <option>Green</option>
                                     <option>Red</option>
@@ -95,7 +63,7 @@
                         </div>
                         <div class="product-count">
                             <label for="size">Số lượng</label>
-                            <form action="#" class="display-flex">
+                            <form action="#" class="display-flex mt-3">
                                 <div class="qtyminus">-</div>
                                 <input type="text" name="quantity" value="1" class="qty">
                                 <div class="qtyplus">+</div>

@@ -1,7 +1,16 @@
 @extends('website.layout.main_website')
+<style>
+    .order-item-cart {
+        width: 100% !important;
+        background-color: #d26e4b!important;
+        font-weight: 600;
+        color: white !important;
+
+    }
+</style>
 @section('content')
     <div class="container mt-5">
-        <h5>THONG TIN THANH TOAN</h5>
+        <h5>THÔNG TIN THANH TOÁN</h5>
         <form action="{{ url('place-order') }}" method="post">
             {{ csrf_field() }}
             <div class="row">
@@ -36,7 +45,7 @@
                     </div>
                 </div>
                 <div class="col-5">
-                    <h3>DON HANG CUA BAN</h3>
+                    <h3>ĐƠN HÀNG CỦA BẠN</h3>
                     <table class="table table-striped ">
                         <thead>
                         <tr>
@@ -61,7 +70,9 @@
                         </div>
                     </table>
                     <hr>
-                    <button type="submit" class="btn btn-primary float-end">Place Order</button>
+                    <button type="submit" class="btn order-item-cart btn-success float-end">
+                        <a class="text-white  text-decoration-none" href="{{ url('website') }}">ĐẶT HÀNG</a>
+                    </button>
                 </div>
             </div>
         </form>
